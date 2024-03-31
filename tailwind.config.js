@@ -13,7 +13,9 @@ module.exports = {
         "semiDarkPer":"#4c4294",
         "lightPer":"#46039a",
         "titlePer":"#412f59",
-        "lowPre":"#7a65a5"
+        "lowPre":"#7a65a5",
+        "backmidel":"#F5D0BA",
+        "backpink":"#E2C7D6"
       }
     },
   },

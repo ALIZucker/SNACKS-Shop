@@ -6,7 +6,7 @@
     <link type="text/css" rel="stylesheet" href="assets/css/output.css">
 </head>
 <body>
-<header class="flex flex-row w-full h-[15vh] items-center sticky">
+<header class="flex flex-row w-full h-[15vh] items-center fixed z-40 bg-gray-100">
     <div class="ml-[3vw]">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
              class="sizemenu lg:hidden">
@@ -43,19 +43,104 @@
             <p>“Delicious healthier snacks. Full of flavour.”</p>
         </section>
         <section class="flex flex-row flex-wrap justify-evenly w-full gap-x-1.5 gap-y-4">
-            <img src="assets/img/GQ_Logo_1-fdde2bb5.svg" class="h-[11vh] w-[40vw] lg:w-[10vw] lg:h-[10vh]">
-            <img src="assets/img/sheerluxe-cbd1235a.svg" class="h-[11vh] w-[40vw] lg:w-[10vw] lg:h-[10vh]">
-            <img src="assets/img/VOGUE_LOGO_1-9007c6b8.svg" class="h-[11vh] w-[40vw] lg:w-[10vw] lg:h-[10vh]">
-            <img src="assets/img/evening-3fff87f2.svg" class="h-[11vh] w-[40vw] lg:w-[10vw] lg:h-[10vh]">
+            <img src="assets/img/GQ_Logo_1-fdde2bb5.svg" class="brand-size">
+            <img src="assets/img/sheerluxe-cbd1235a.svg" class="brand-size">
+            <img src="assets/img/VOGUE_LOGO_1-9007c6b8.svg" class="brand-size">
+            <img src="assets/img/evening-3fff87f2.svg" class="brand-size">
         </section>
     </div>
     <!--برند ها پایان-->
-    <div>
-        <article>
-            <img src="">
-            <h3></h3>
-            <p></p>
+    <div class="flex flex-col mt-[10vh] lg:flex-row">
+        <article class="box-post">
+            <div class="geeks rounded-2xl">
+                <img src="assets/img/card1-fa74b6bc.webp">
+            </div>
+
+            <h3 class="text-2xl text-semiDarkPer font-bold ">PRETZEL THINS </h3>
+            <p class="text-lg text-semiDarkPer font-bold">5 super seasonings</p>
         </article>
+        <article class="box-post">
+            <div class="geeks rounded-2xl">
+                <img src="assets/img/card2-53e42a8a.png">
+            </div>
+            <h3 class="text-2xl text-semiDarkPer font-bold">OLIVES </h3>
+            <p class="text-lg text-semiDarkPer font-bold">3 magical marinades</p>
+        </article>
+        <article class="box-post">
+            <div class="geeks rounded-2xl">
+                <img src="assets/img/card3-a03e00a3.png">
+            </div>
+            <h3 class="text-2xl text-semiDarkPer font-bold">CHOCO PRETZELS</h3>
+            <p class="text-lg text-semiDarkPer font-bold">2 fantabulous flavours</p>
+        </article>
+        <article class="box-post">
+            <div class="geeks rounded-2xl">
+                <img src="assets/img/card4-c985882c.png">
+            </div>
+            <h3 class="text-2xl text-semiDarkPer font-bold">BUNDLES</h3>
+            <p class="text-lg text-semiDarkPer font-bold">Bundle up and save!</p>
+        </article>
+    </div>
+    <!--پایان پست هااا-->
+    <div class=" bg-backpink relative lg:h-[93vh] h-[120vh]  ">
+        <section class="lg:hidden  absolute h-[25vh]  w-full  text-center pt-[3vh] font-bold text-4xl">
+            <div class="text-titlePer">SNACKS THAT FEED YOUR FEEL G
+                <img src="assets/img/Smile-4eab8134.svg" CLASS="inline w-9 h-9">
+                <img src="assets/img/Smile-4eab8134.svg" CLASS="inline w-9 h-9">
+                D
+            </div>
+        </section>
+        <div class="flex flex-col  lg:h-full lg:flex-row-reverse">
+            <section class="h-[80vh]  lg:h-full w-full lg:w-[150vw]">
+                <img src="assets/img/snackGif-b17e7fba.webp" class="fit h-full lg:object-fill	">
+            </section>
+            <section class="mt-[3vh] text-center lg:text-left">
+                <section class="hidden lg:block   h-[25vh]  w-full  text-center p-[4vh] font-extrabold text-6xl">
+                    <div class="text-titlePer">SNACKS THAT FEED YOUR FEEL<br> G
+                        <img src="assets/img/Smile-4eab8134.svg" CLASS="inline w-9 h-9">
+                        <img src="assets/img/Smile-4eab8134.svg" CLASS="inline w-9 h-9">
+                        D
+                    </div>
+                </section>
+                <p class="text-center lg:text-left lg:mt-[20vh] text-titlePer text-lg font-medium px-5">Our delicious
+                    snacks (& us) have our hearts set on bringing happiness to the planet. We keep health
+                    at the centre of all our creations, whilst also delivering an unbeatable flavour experience that
+                    will blow your snacking socks off!</p>
+                <button class="btn-snack ">SHOP NOW</button>
+
+            </section>
+        </div>
+    </div>
+    <!-- توضیحات اسنک-->
+    <div class="bg-backmidel h-auto w-full">
+        <section class="  h-[25vh]  w-full  text-center pt-[3vh] font-extrabold text-5xl lg:text-7xl">
+            <h2 class="text-titlePer">HOW OLLY’S SNACKS UP</h2>
+        </section>
+        <section class="flex flex-col pt-[3vh] lg:flex-row-reverse">
+            <article class="flex flex-col items-center text-center px-5 lg:w-[34vw]">
+                <img src="assets/img/face-4be56343.svg" class="w-[30vw] h-[30vh]">
+                <h3 class="text-xl text-titlePer font-bold">HEALTHIER DELICIOUS</h3>
+                <p class="text-sm text-titlePer font-semibold">All our creations have health at the heart and we have a
+                    no compromise mentality on the quality of
+                    our snack taste experience. We only deal in DELICIOUS.</p>
+            </article>
+
+
+            <article class="flex flex-col items-center text-center px-5 lg:w-[34vw]">
+                <img src="assets/img/hand-a3ed2229.svg" class="w-[30vw] h-[30vh]">
+                <h3 class="text-xl text-titlePer font-bold">PLANT POWERED</h3>
+                <p class="text-sm text-titlePer font-semibold">All of our savoury Pretzel Thins & Olives are vegan
+                    friendly, plant powered by some of Mumma nature's finest natural ingredients.</p>
+            </article>
+
+
+            <article class="flex flex-col items-center text-center px-5 lg:w-[34vw]">
+                <img src="assets/img/heart-28bf7461.svg" class="w-[30vw] h-[30vh]">
+                <h3 class="text-xl text-titlePer font-bold">CHARITY FOCUSSED</h3>
+                <p class="text-sm text-titlePer font-semibold">We donate a school meal, on your behalf, to a child in
+                    need with every order placed on our website - with the help of our friends, One Feeds Two.</p>
+            </article>
+        </section>
     </div>
 </main>
 
