@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer  components {
+    .title-text {
+        @apply text-white font-bold text-[3.5vw] text-center lg:text-left lg:text-[1.5vw] px-7;
+    }
+    .botn{
+        @apply w-[14vw] h-[8vh] border-2   font-semibold text-lg rounded-3xl ;
+    }
+}
+
+@layer utilities {
+    .sizemenu {
+        @apply w-[7vw] h-[7vh] ;
+    }
+
+    .bg-img {
+        background-image: url("../img/topSectionSm-7d225c58.webp");
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #9ca3af;
+    }
+
+    .bg-imgLG {
+        background-image: url("../img/topSectionLG-d32a63b3.jpg");
+        background-position: right;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #9ca3af;
+    }
+
+}
