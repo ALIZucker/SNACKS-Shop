@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer  components {
+    .btn-snack{
+        @apply w-[30vw] lg:ml-[1vw] lg:w-[13vw] h-[8vh] border-2 mt-[3vh] border-neutral-700 font-semibold text-lg rounded-2xl hover:rounded-[50%] hover:bg-titlePer hover:text-white;
+    }
+    .title-text {
+        @apply text-white font-bold text-[3.5vw] text-center lg:text-left lg:text-[1.5vw] px-7;
+    }
+
+    .botn {
+        @apply w-[14vw] h-[8vh] border-2   font-semibold text-lg rounded-3xl ;
+    }
+
+    .box-post {
+        @apply w-full box-border p-5 text-center;
+    }
+    .geeks {
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .geeks img {
+        width: 100%;
+        transition: 0.5s all ease-in-out;
+    }
+}
+
+@layer utilities {
+    .sizemenu {
+        @apply w-[7vw] h-[7vh] ;
+    }
+
+    .bg-img {
+        background-image: url("../img/topSectionSm-7d225c58.webp");
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #9ca3af;
+    }
+
+    .bg-imgLG {
+        background-image: url("../img/topSectionLG-d32a63b3.jpg");
+        background-position: right;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #9ca3af;
+    }
+
+    .brand-size {
+        @apply h-[11vh] w-[40vw] lg:w-[10vw] lg:h-[10vh];
+    }
+
+    .geeks:hover img {
+        transform: scale(1.1);
+    }
+        .fit{
+            object-fit: contain;
+            object-position: bottom;
+        }
+}
