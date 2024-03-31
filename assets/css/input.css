@@ -28,6 +28,12 @@
 }
 
 @layer utilities {
+    .bg-img2{
+        background-image: url("../img/wave-0ab9dbd9.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
     .sizemenu {
         @apply w-[7vw] h-[7vh] ;
     }
