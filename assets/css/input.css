@@ -4,6 +4,9 @@
 
 
 @layer  components {
+    .select-size{
+        @apply  box-sizeing text-center;
+    }
     .btn-snack{
         @apply w-[30vw] lg:ml-[1vw] lg:w-[13vw] h-[8vh] border-2 mt-[3vh] border-neutral-700 font-semibold text-lg rounded-2xl hover:rounded-[50%] hover:bg-titlePer hover:text-white;
     }
@@ -41,7 +44,9 @@
     .sizemenu {
         @apply w-[7vw] h-[7vh] ;
     }
-
+    .box-sizeing{
+        @apply bg-gray-200 text-lightPer text-lg  p-[2vh] rounded-xl hover:border-2 hover:border-violet-900
+    }
     .bg-img {
         background-image: url("../img/topSectionSm-7d225c58.webp");
         background-position: top;
