@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer  components {
     .btn-snack{
         @apply w-[30vw] lg:ml-[1vw] lg:w-[13vw] h-[8vh] border-2 mt-[3vh] border-neutral-700 font-semibold text-lg rounded-2xl hover:rounded-[50%] hover:bg-titlePer hover:text-white;
@@ -24,6 +25,9 @@
     .geeks img {
         width: 100%;
         transition: 0.5s all ease-in-out;
+    }
+    .face{
+        @apply inline w-12 h-12;
     }
 }
 
