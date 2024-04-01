@@ -30,7 +30,7 @@
 </header>
 <main>
     <div class="flex flex-col lg:flex-row w-full lg:pt-[15vh]">
-        <section class="flex flex-row w-full items-center justify-center lg:w-[50%] bg-backpink">
+        <section class="flex flex-row w-full items-center justify-center lg:w-[55vw] bg-backpink">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-11 h-11">
                 <path fill-rule="evenodd"
                       d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z"
@@ -89,19 +89,75 @@
             </ul>
             <p class="font-bold text-semiDarkPer w-full text-left mt-[4vh] GroteskCompressedBold text-2xl">SELECT
                 SIZE</p>
-            <section class="flex flex-row justify-evenly w-full mt-[4vh] ">
-                <span class="select-size w-[25vw] h-[14vh] GroteskCompressed">REGULAR<br>
+            <section class="flex flex-row justify-evenly w-full mt-[4vh] h-[14vh]  ">
+                <span class="select-size w-[25vw] lg:w-[13vw] h-[13vh] GroteskCompressed">REGULAR<br>
 (10 x 35g)</span>
-                <span class="select-size w-[25vw] h-[14vh] GroteskCompressed">LARGE<br>
+                <span class="select-size w-[25vw] lg:w-[13vw] h-[13vh] GroteskCompressed">LARGE<br>
 (7 x 140g)</span>
-                <span class="select-size w-[25vw] h-[14vh] GroteskCompressed">BUNDLE<br>
+                <span class="select-size w-[25vw] lg:w-[13vw] h-[13vh] GroteskCompressed">BUNDLE<br>
 (40 x 35g)</span>
             </section>
-            <p class="font-bold text-semiDarkPer GroteskCompressedBold w-full text-left mt-[4vh] text-2xl ">PURCHASE
-                TYPE</p>
+            <p class="font-bold text-semiDarkPer GroteskCompressedBold w-full text-left mt-[4vh] text-4xl flex flex-row justify-between"><span>PURCHASE
+                TYPE </span><span>12,000</span></p>
 
+            <div class="w-full flex flex-row justify-evenly ">
+                <section class="flex flex-row-reverse justify-around items-center space-x-5 w-[50%] mt-[3vh]">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd"
+                              d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z"
+                              clip-rule="evenodd"/>
+                    </svg>
+                    <p class="text-center font-bold text-2xl">1</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd"
+                              d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm3 10.5a.75.75 0 0 0 0-1.5H9a.75.75 0 0 0 0 1.5h6Z"
+                              clip-rule="evenodd"/>
+                    </svg>
+
+                </section>
+                <button class="addToCart Grotesk bg-semiDarkPer">add to cart</button>
+
+            </div>
         </section>
 
+    </div>
+    <!--قسمت فروشگاهی -->
+    <div class="flex flex-row justify-around items-center flex-wrap bg-backmidel h-[60vh] lg:h-[40vh] mt-[4vh] p-[2vh]">
+        <article class="flex flex-col items-center">
+            <img src="assets/img/part1.svg" class="w-[18vw] h-[18vh] lg:w-[12vw] lg:h-[12vh]">
+            <p class="text-[2.5vw] lg:text-[1.2vw] GroteskExtraWide font-bold text-lightPer">SUPER SEASONING</p>
+        </article>
+        <article class="flex flex-col items-center">
+            <img src="assets/img/part2.svg" class="w-[18vw] h-[18vh] lg:w-[12vw] lg:h-[12vh]">
+            <p class="text-[2.5vw] lg:text-[1.2vw] GroteskExtraWide font-bold text-lightPer">LIGHT & CRISPY</p>
+        </article>
+        <article class="flex flex-col items-center">
+            <img src="assets/img/part3.svg" class="w-[18vw] h-[18vh] lg:w-[12vw] lg:h-[12vh]">
+            <p class="text-[2.5vw] lg:text-[1.2vw] GroteskExtraWide font-bold text-lightPer">VEGAN FRIENDLY</p>
+        </article>
+        <article class="flex flex-col items-center">
+            <img src="assets/img/part4.svg" class="w-[18vw] h-[18vh] lg:w-[12vw] lg:h-[12vh]">
+            <p class="text-[2.5vw] lg:text-[1.2vw] GroteskExtraWide font-bold text-lightPer">OVEN-BAKED</p>
+        </article>
+
+    </div>
+    <!--قسمت توضیحات-->
+    <div class="flex flex-col lg:flex-row-reverse lg:h-[95vh]">
+        <section class="direct   lg:w-[50%]">
+            <h2 class="text-7xl lg:text-6xl">HEALTHIER DELICIOUS</h2>
+            <h4>CRISP OLL-TERNATIVE</h4>
+            <p>Our magical pretzel thins have less fat & fewer calories than crisps & popcorn. All vegan friendly too!</p>
+            <br>
+            <h4>OVEN-BAKED (NEVER FRIED)</h4>
+            <p>We oven-bake our thins to pretz-perfection, to create a light & crispy snack that will blow your socks off every tim</p>
+            <br>
+            <h4>LESS THAN 120 CALS</h4>
+            <p>Thins by name, thins by nature. Our snack packs have less than 120 calories per bag.</p>
+            <br>
+        </section>
+        <section  class="lg:h-full lg:w-[50%]">
+            <img src="assets/img/girl.webp" class="lg:object-fill lg:h-full w-full">
+        </section>
     </div>
 </main>
 
