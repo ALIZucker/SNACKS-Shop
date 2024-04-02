@@ -97,7 +97,9 @@
         padding: 2vw 2vh;
     }
 
-
+    .trans-post{
+        transition: opacity 0.5s ease-in-out;
+    }
 
     .direct > h4 {
         font-weight: bold;
