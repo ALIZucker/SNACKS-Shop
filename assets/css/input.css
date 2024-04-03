@@ -42,6 +42,22 @@
     .face {
         @apply inline w-12 h-12;
     }
+
+    .box-img {
+        background-image: url("../img/back.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+    .bax-imgLg {
+        background-image: url("../img/back.webp");
+        background-repeat: no-repeat;
+        background-size: initial;
+        background-position: center;
+    }
+    .inputme{
+    @apply rounded-bl text-center text-lg font-semibold py-1 px-3 ;
+    }
 }
 
 @layer utilities {
@@ -97,7 +113,7 @@
         padding: 2vw 2vh;
     }
 
-    .trans-post{
+    .trans-post {
         transition: opacity 0.5s ease-in-out;
     }
 
