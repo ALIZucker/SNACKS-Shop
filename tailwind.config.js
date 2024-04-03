@@ -17,6 +17,7 @@ module.exports = {
         "backmidel":"#F5D0BA",
         "backpink":"#E2C7D6"
       }
+
     },
   },
   plugins: [],

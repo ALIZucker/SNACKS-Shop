@@ -2,10 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer  components {
-    .btn-snack{
+
+    .addToCart {
+        @apply w-[40vw] lg:ml-[1vw] lg:w-[13vw] h-[8vh] border-2 mt-[3vh] border-neutral-700 font-semibold text-lg rounded-2xl hover:rounded-[50%] hover:bg-titlePer hover:text-white  uppercase;
+    }
+
+    .select-size {
+        @apply box-sizeing text-center;
+    }
+
+    .btn-snack {
         @apply w-[30vw] lg:ml-[1vw] lg:w-[13vw] h-[8vh] border-2 mt-[3vh] border-neutral-700 font-semibold text-lg rounded-2xl hover:rounded-[50%] hover:bg-titlePer hover:text-white;
     }
+
     .title-text {
         @apply text-white font-bold text-[3.5vw] text-center lg:text-left lg:text-[1.5vw] px-7;
     }
@@ -17,25 +28,36 @@
     .box-post {
         @apply w-full box-border p-5 text-center;
     }
+
     .geeks {
         overflow: hidden;
         margin: 0 auto;
     }
+
     .geeks img {
         width: 100%;
         transition: 0.5s all ease-in-out;
     }
+
+    .face {
+        @apply inline w-12 h-12;
+    }
 }
 
 @layer utilities {
-    .bg-img2{
+    .bg-img2 {
         background-image: url("../img/wave-0ab9dbd9.svg");
         background-repeat: no-repeat;
         background-size: cover;
 
     }
+
     .sizemenu {
         @apply w-[7vw] h-[7vh] ;
+    }
+
+    .box-sizeing {
+        @apply bg-gray-200 text-lightPer text-lg  p-[2vh] rounded-xl hover:border-2 hover:border-violet-900
     }
 
     .bg-img {
@@ -61,8 +83,27 @@
     .geeks:hover img {
         transform: scale(1.1);
     }
-        .fit{
-            object-fit: contain;
-            object-position: bottom;
-        }
+
+    .fit {
+        object-fit: contain;
+        object-position: bottom;
+    }
+
+    .direct {
+        direction: ltr;
+        background-color: #412F59;
+        color: #E2C7D6;
+        height: 95vh;
+        padding: 2vw 2vh;
+    }
+
+    .trans-post{
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .direct > h4 {
+        font-weight: bold;
+        margin-top: 3vh;
+
+    }
 }
