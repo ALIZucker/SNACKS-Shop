@@ -554,6 +554,37 @@ video {
   --tw-contain-style:  ;
 }
 
+.box-shop {
+  margin-top: 14vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .box-shop {
+    margin-top: 20vh;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    -moz-column-gap: 1.75rem;
+         column-gap: 1.75rem;
+  }
+
+  .box-shop > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+  }
+
+  .box-shop {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+}
+
 .stick {
   position: sticky;
   top: 12vh;
@@ -660,6 +691,12 @@ video {
   width: 100%;
   padding: 1.25rem;
   text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .box-post {
+    width: 20vw;
+  }
 }
 
 .geeks {
@@ -1309,6 +1346,10 @@ video {
   opacity: 0.7;
 }
 
+.cursorpointer > li {
+  cursor: pointer;
+}
+
 .bg-img2 {
   background-image: url("../img/wave-0ab9dbd9.svg");
   background-repeat: no-repeat;
@@ -1406,6 +1447,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:static {
+    position: static;
+  }
+
   .lg\:left-\[29vw\] {
     left: 29vw;
   }
@@ -1566,6 +1611,10 @@ video {
     width: 9vw;
   }
 
+  .lg\:w-full {
+    width: 100%;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -1650,6 +1699,15 @@ video {
 
   .lg\:font-bold {
     font-weight: 700;
+  }
+
+  .lg\:font-semibold {
+    font-weight: 600;
+  }
+
+  .lg\:text-semiDarkPer {
+    --tw-text-opacity: 1;
+    color: rgb(76 66 148 / var(--tw-text-opacity));
   }
 
   .lg\:text-white {

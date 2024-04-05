@@ -4,6 +4,10 @@
 
 
 @layer  components {
+    .box-shop {
+        @apply mt-[14vh] lg:mt-[20vh]  flex flex-col lg:flex-row lg:w-full lg:flex-wrap lg:justify-start  lg:gap-x-7 lg:space-y-3 lg:px-[5vw] lg:py-[2vh];
+    }
+
     .stick {
         position: sticky;
         top: 12vh;
@@ -34,7 +38,7 @@
     }
 
     .box-post {
-        @apply w-full box-border p-5 text-center;
+        @apply w-full box-border p-5 text-center lg:w-[20vw] ;
     }
 
     .geeks {
@@ -71,6 +75,11 @@
 }
 
 @layer utilities {
+    .cursorpointer > li {
+        cursor: pointer;
+
+    }
+
     .bg-img2 {
         background-image: url("../img/wave-0ab9dbd9.svg");
         background-repeat: no-repeat;
