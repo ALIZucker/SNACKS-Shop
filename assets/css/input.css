@@ -4,6 +4,14 @@
 
 
 @layer  components {
+    .stick {
+        position: sticky;
+        top: 12vh;
+        background-color: white;
+        padding-top: 6vh;
+        padding-bottom: 2vh;
+        z-index: 39;
+    }
 
     .addToCart {
         @apply w-[40vw] lg:ml-[1vw] lg:w-[13vw] h-[8vh] border-2 mt-[3vh] border-neutral-700 font-semibold text-lg rounded-2xl hover:rounded-[50%] hover:bg-titlePer hover:text-white  uppercase;
@@ -49,14 +57,16 @@
         background-size: cover;
         background-position: top;
     }
+
     .bax-imgLg {
         background-image: url("../img/back.webp");
         background-repeat: no-repeat;
         background-size: initial;
         background-position: center;
     }
-    .inputme{
-    @apply rounded-bl text-center text-lg font-semibold py-1 px-3 ;
+
+    .inputme {
+        @apply rounded-bl text-center text-lg font-semibold py-1 px-3 ;
     }
 }
 

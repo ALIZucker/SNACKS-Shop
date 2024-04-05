@@ -554,6 +554,15 @@ video {
   --tw-contain-style:  ;
 }
 
+.stick {
+  position: sticky;
+  top: 12vh;
+  background-color: white;
+  padding-top: 6vh;
+  padding-bottom: 2vh;
+  z-index: 39;
+}
+
 .addToCart {
   margin-top: 3vh;
   height: 8vh;
@@ -936,6 +945,10 @@ video {
   width: 70vw;
 }
 
+.w-\[80\%\] {
+  width: 80%;
+}
+
 .w-\[8vw\] {
   width: 8vw;
 }
@@ -1156,6 +1169,11 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.py-\[1\.4vh\] {
+  padding-top: 1.4vh;
+  padding-bottom: 1.4vh;
+}
+
 .py-\[4vh\] {
   padding-top: 4vh;
   padding-bottom: 4vh;
@@ -1220,6 +1238,11 @@ video {
 
 .text-7xl {
   font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-8xl {
+  font-size: 6rem;
   line-height: 1;
 }
 
