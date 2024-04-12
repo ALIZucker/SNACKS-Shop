@@ -15,3 +15,8 @@ export function showInput(strArr, rezultBox, inSearch) {
 export function showAlart(){
     alert("Enter page Link")
 }
+export function LowColor(arrelem) {
+    arrelem.forEach((elem)=>{
+        elem.style.opacity="30%";
+    })
+}

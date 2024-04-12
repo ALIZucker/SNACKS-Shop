@@ -26,11 +26,14 @@
     }
 
     .btn-snack {
-        @apply w-[30vw] lg:ml-[1vw] lg:w-[13vw] h-[8vh] border-2 mt-[3vh] border-neutral-700 font-semibold text-lg rounded-2xl hover:rounded-[50%] hover:bg-titlePer hover:text-white;
+        @apply  lg:border-violet-900 text-neutral-900 lg:text-lightPer w-[60vw] lg:ml-[1vw] lg:w-[13vw] h-[5vh] lg:h-[8vh] lg:border-2 border-4 lg:mt-[4vh] mt-[4vh] border-neutral-700 font-semibold lg:text-lg text-title-big1 rounded-2xl hover:rounded-[50%] hover:bg-titlePer hover:text-white;
+    }
+    .starRate{
+        @apply object-cover w-[5vw] h-[5vh] lg:w-[1.5vw] lg:h-[1.5vw];
     }
 
     .title-text {
-        @apply text-white font-bold text-[3.5vw] text-center lg:text-left lg:text-[1.5vw] px-7;
+        @apply text-white font-bold text-title-big1 text-center lg:text-left lg:text-[1.3vw] px-7;
     }
 
     .botn {
@@ -52,7 +55,7 @@
     }
 
     .face {
-        @apply inline w-12 h-12;
+        @apply inline lg:w-12 lg:h-12 object-contain w-[14vw] hover:rotate-180;
     }
 
     .box-img {
@@ -133,14 +136,25 @@
     }
 
     .brand-size {
-        @apply h-[11vh] w-[40vw] lg:w-[10vw] lg:h-[10vh] opacity-40;
+        @apply h-[11vh] w-[40vw] lg:w-[17vw] lg:h-[12vh] opacity-30 mt-[8vh] object-fill object-center ;
     }
-    #bannerText{
+
+    #bannerText {
         animation: moveing 3s ease-in-out infinite;
-        animation-delay: 3s;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 0 4vw;
+
     }
+
     @keyframes moveing {
-        from{margin-right: 0.5vw}to{margin-right: 27vw; opacity: .4;}
+        from {
+            opacity: 100%
+        }
+        to {
+            opacity: 0;
+        }
     }
 
     .geeks:hover img {
