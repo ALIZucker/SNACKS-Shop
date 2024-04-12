@@ -34,7 +34,7 @@
     }
 
     .botn {
-        @apply w-[14vw] h-[8vh] border-2   font-semibold text-lg rounded-3xl ;
+        @apply w-[14vw] h-[8vh] border-2   font-semibold text-title-lit rounded-3xl ;
     }
 
     .box-post {
@@ -80,6 +80,27 @@
 
     }
 
+    .spanSearch {
+        @apply border-b-2 border-gray-400;
+    }
+
+    .bod {
+        border: 0.7px #2c2a2a solid;
+    }
+
+    #search {
+        width: 15vw;
+        margin-top: 0.4vh;
+        border: none;
+        background-color: #F3F4F6;
+        outline: none;
+        direction: rtl;
+        padding: 2px 2px;
+
+        font-size: 1.2vw;
+
+    }
+
     .bg-img2 {
         background-image: url("../img/wave-0ab9dbd9.svg");
         background-repeat: no-repeat;
@@ -88,7 +109,7 @@
     }
 
     .sizemenu {
-        @apply w-[7vw] h-[7vh] ;
+        @apply w-[5vw] h-[5vh] object-center ;
     }
 
     .box-sizeing {
@@ -112,7 +133,14 @@
     }
 
     .brand-size {
-        @apply h-[11vh] w-[40vw] lg:w-[10vw] lg:h-[10vh];
+        @apply h-[11vh] w-[40vw] lg:w-[10vw] lg:h-[10vh] opacity-40;
+    }
+    #bannerText{
+        animation: moveing 3s ease-in-out infinite;
+        animation-delay: 3s;
+    }
+    @keyframes moveing {
+        from{margin-right: 0.5vw}to{margin-right: 27vw; opacity: .4;}
     }
 
     .geeks:hover img {

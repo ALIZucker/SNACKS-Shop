@@ -8,41 +8,62 @@
 </head>
 <body>
 
-<header class="flex flex-row w-full h-[15vh] items-center fixed z-40 bg-gray-100">
-    <div class="ml-[3vw]">
+<header class="flex flex-ca w-full h-[12vh] items-center justify-around fixed z-40 bg-gray-100">
+    <div class="ml-[3vw]  w-[40vw] text-center">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
              class="sizemenu lg:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
         </svg>
-        <ul class="hidden  lg:flex lg:flex-row space-x-6 text-semiDarkPer GroteskBold text-xl">
+        <ul class="hidden  lg:flex lg:flex-row space-x-6 text-semiDarkPer GroteskBold text-title-lit">
             <li><a href="shop.html">Shop</a></li>
-            <li ><a href="indexLogin.html">Our Story</a></li>
-            <li>One Feeds two</li>
+            <li><a href="indexLogin.html">Our Story</a></li>
+            <li>
+                <div class="flex flex-row items-center space-x-1 border-2 border-gray-500 p-[2px] rounded-xl">
+                    <input type="search" id="search"/>
+                    <div class="absolute flex flex-col bg-gray-200 top-[9vh] lg:w-[17vw] text  shadow-2xl shadow-neutral-500 bod">
+
+
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="currentColor" class="w-7 h-7">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/>
+                    </svg>
+
+                </div>
+            </li>
         </ul>
     </div>
-    <div class="w-[20vw] h-[9vh] ml-[32vw] lg:ml-[18vw] lg:w-[8vw]">
+    <div class="w-[20vw] h-[9vh]   lg:w-[8vw]">
         <img src="assets/img/footer-logo-354062a9.svg">
     </div>
-    <div class="flex flex-row w-[8vw] ml-[15vw] space-x-3 lg:ml-[28vw]">
+    <!--لگو سایت-->
+    <div class="flex flex-row w-[8vw] ml-[18vw] space-x-1">
         <img src="assets/img/Profile-3f993ffc.svg" class="sizemenu">
         <img src="assets/img/cart-dark-4b9bbf20.svg" class="sizemenu">
     </div>
 </header>
+
+<!--پایان هدر سایت-->
+
 <main>
     <div class="h-[120vh] lg:h-[95vh] bg-img lg:bg-imgLG relative ">
 
         <p class="title-text pt-[20vh] Grotesk">5.86 Score 2100 Reviwes</p>
 
-        <h1 class="GroteskBold font-extrabold text-6xl text-white text-center lg:text-left lg:text-8xl lg:ml-4">SNACKS<br> SOOO GOOD
+        <h1 class="GroteskBold font-extrabold text-6xl text-white text-center lg:text-left lg:text-title-big lg:ml-4">
+            SNACKS<br> SOOO GOOD
         </h1>
         <p class="title-text GroteskRegular">Healthier delicious snacks designed to feed your feel good!</p>
-        <button class="hidden GroteskBold lg:block lg:botn lg:border-cyan-50 lg:text-white lg:mt-[5vh] lg:ml-[3vw]  hover:rounded-[50%] hover:bg-white hover:text-lightPer">SHOP NOW
+        <button class="hidden botbanner GroteskBold lg:block lg:botn lg:border-cyan-50 lg:text-white lg:mt-[5vh] lg:ml-[3vw]  hover:rounded-[50%] hover:bg-white hover:text-lightPer">
+            SHOP NOW
         </button>
     </div>
     <!--عکس هدر-->
     <div>
-        <section class="GroteskRegular mt-[9vh] w-full h-[15vh] text-center text-xl lg:text-4xl font-semibold text-lightPer">
-            <p >“Delicious healthier snacks. Full of flavour.”</p>
+        <section
+                class="GroteskRegular mt-[9vh] w-full h-[15vh] text-center text-xl lg:text-4xl font-semibold text-lightPer">
+            <p id="bannerText">“Delicious healthier snacks. Full of flavour.”</p>
         </section>
         <section class="flex flex-row flex-wrap justify-evenly w-full gap-x-1.5 gap-y-4">
             <img src="assets/img/GQ_Logo_1-fdde2bb5.svg" class="brand-size">
@@ -85,8 +106,9 @@
     </div>
     <!--پایان پست هااا-->
     <div class=" bg-backpink relative lg:h-[93vh] h-[145vh]  ">
-        <section class="lg:hidden  absolute h-[50vh]  w-full GroteskCompressed text-center pt-[3vh] font-bold text-6xl ">
-            <div class="text-titlePer  " >SNACKS THAT FEED YOUR FEEL G
+        <section
+                class="lg:hidden  absolute h-[50vh]  w-full GroteskCompressed text-center pt-[3vh] font-bold text-6xl ">
+            <div class="text-titlePer  ">SNACKS THAT FEED YOUR FEEL G
                 <img src="assets/img/Smile-4eab8134.svg" CLASS="face">
                 <img src="assets/img/Smile-4eab8134.svg" CLASS="face">
                 D
@@ -97,14 +119,16 @@
                 <img src="assets/img/snackGif-b17e7fba.webp" class="fit h-full lg:object-fill	">
             </section>
             <section class="mt-[3vh] text-center lg:text-left">
-                <section class="hidden lg:block GroteskCompressed  h-[25vh]  w-full  text-center p-[4vh] font-extrabold text-6xl">
+                <section
+                        class="hidden lg:block GroteskCompressed  h-[25vh]  w-full  text-center p-[4vh] font-extrabold text-6xl">
                     <div class="text-titlePer">SNACKS THAT FEED YOUR FEEL<br> G
                         <img src="assets/img/Smile-4eab8134.svg" class="face lg:w-[7vw] lg:h-[14vh] object-cover">
                         <img src="assets/img/Smile-4eab8134.svg" class="face lg:w-[7vw] lg:h-[14vh] object-cover">
                         D
                     </div>
                 </section>
-                <p class="text-center  lg:text-left lg:mt-[20vh] text-titlePer text-lg font-medium GroteskRegular px-5">Our delicious
+                <p class="text-center  lg:text-left lg:mt-[20vh] text-titlePer text-lg font-medium GroteskRegular px-5">
+                    Our delicious
                     snacks (& us) have our hearts set on bringing happiness to the planet. We keep health
                     at the centre of all our creations, whilst also delivering an unbeatable flavour experience that
                     will blow your snacking socks off!</p>
@@ -122,7 +146,8 @@
             <article class="flex flex-col items-center text-center px-5 lg:w-[34vw]">
                 <img src="assets/img/face-4be56343.svg" class="w-[30vw] h-[30vh]">
                 <h3 class="text-2xl text-titlePer font-bold GroteskCompressedBold">HEALTHIER DELICIOUS</h3>
-                <p class="text-sm text-titlePer font-semibold GroteskRegular">All our creations have health at the heart and we have a
+                <p class="text-sm text-titlePer font-semibold GroteskRegular">All our creations have health at the heart
+                    and we have a
                     no compromise mentality on the quality of
                     our snack taste experience. We only deal in DELICIOUS.</p>
             </article>
@@ -131,7 +156,8 @@
             <article class="flex flex-col items-center text-center px-5 lg:w-[34vw]">
                 <img src="assets/img/hand-a3ed2229.svg" class="w-[30vw] h-[30vh]">
                 <h3 class="text-2xl text-titlePer font-bold GroteskCompressedBold">PLANT POWERED</h3>
-                <p class="text-sm text-titlePer font-semibold GroteskRegular">All of our savoury Pretzel Thins & Olives are vegan
+                <p class="text-sm text-titlePer font-semibold GroteskRegular">All of our savoury Pretzel Thins & Olives
+                    are vegan
                     friendly, plant powered by some of Mumma nature's finest natural ingredients.</p>
             </article>
 
@@ -139,7 +165,8 @@
             <article class="flex flex-col items-center text-center px-5 lg:w-[34vw]">
                 <img src="assets/img/heart-28bf7461.svg" class="w-[30vw] h-[30vh]">
                 <h3 class="text-2xl text-titlePer font-bold GroteskCompressedBold">CHARITY FOCUSSED</h3>
-                <p class="text-sm text-titlePer font-semibold GroteskRegular">We donate a school meal, on your behalf, to a child in
+                <p class="text-sm text-titlePer font-semibold GroteskRegular">We donate a school meal, on your behalf,
+                    to a child in
                     need with every order placed on our website - with the help of our friends, One Feeds Two.</p>
             </article>
         </section>
@@ -157,7 +184,8 @@
                     <img src="assets/img/moveLine1-ce314c73.png">
                 </div>
 
-                <h3 class="text-lg GroteskWideMediumRegular h-[15vh] text-semiDarkPer font-bold  ">SOUR CREAM & ONION PRETZEL THINS </h3>
+                <h3 class="text-lg GroteskWideMediumRegular h-[15vh] text-semiDarkPer font-bold  ">SOUR CREAM & ONION
+                    PRETZEL THINS </h3>
                 <button class="btn-snack border-violet-900 text-lightPer Grotesk font-bold">SHOP NOW</button>
                 <ul class="flex flex-row justify-center mt-[2vh]">
                     <li>
@@ -197,7 +225,8 @@
                     <img src="assets/img/moveLine2-58dadf29.png">
                 </div>
 
-                <h3 class="text-lg GroteskWideMediumRegular h-[15vh] text-semiDarkPer font-bold ">OLL-IN-ONE SNACK BOX</h3>
+                <h3 class="text-lg GroteskWideMediumRegular h-[15vh] text-semiDarkPer font-bold ">OLL-IN-ONE SNACK
+                    BOX</h3>
                 <button class="btn-snack border-violet-900 text-lightPer Grotesk font-bold">SHOP NOW</button>
                 <ul class="flex flex-row justify-center mt-[2vh]">
                     <li>
@@ -237,7 +266,8 @@
                     <img src="assets/img/moveLine3-bff395c5.png">
                 </div>
 
-                <h3 class="text-lg GroteskWideMediumRegular h-[15vh] text-semiDarkPer font-bold ">SOUR CREAM & ONION PRETZEL THINS</h3>
+                <h3 class="text-lg GroteskWideMediumRegular h-[15vh] text-semiDarkPer font-bold ">SOUR CREAM & ONION
+                    PRETZEL THINS</h3>
                 <button class="btn-snack border-violet-900 text-lightPer Grotesk font-bold">SHOP NOW</button>
                 <ul class="flex flex-row justify-center mt-[2vh]">
                     <li>
@@ -276,8 +306,10 @@
                     <img src="assets/img/moveLine4-e1d31b0b.png">
                 </div>
 
-                <h3 class="text-lg GroteskWideMediumRegular  text-semiDarkPer font-bold h-[15vh] ">SOUR CREAM & ONION PRETZEL THINS</h3>
-                <button h class="btn-snack border-violet-900 text-lightPer Grotesk font-bold"><a href="index2.html">SHOP NOW</a></button>
+                <h3 class="text-lg GroteskWideMediumRegular  text-semiDarkPer font-bold h-[15vh] ">SOUR CREAM & ONION
+                    PRETZEL THINS</h3>
+                <button h class="btn-snack border-violet-900 text-lightPer Grotesk font-bold"><a href="index2.html">SHOP
+                    NOW</a></button>
                 <ul class="flex flex-row justify-center mt-[2vh]">
                     <li>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
@@ -319,7 +351,8 @@
             <img src="assets/img/pretzel-d39f556a.webp" class="w-[50vw] h-[50vh]">
         </section>
         <section class="  h-[25vh]  w-full   pt-[3vh] font-extrabold text-5xl lg:text-4xl text-justify">
-            <h2 class="text-titlePer pl-3 mt-[9vh] GroteskBold font-extrabold">WITH EVERY ORDER PLACED,<br> WE DONATE A SCHOOL MEAL <br>TO A CHILD
+            <h2 class="text-titlePer pl-3 mt-[9vh] GroteskBold font-extrabold">WITH EVERY ORDER PLACED,<br> WE DONATE A
+                SCHOOL MEAL <br>TO A CHILD
                 IN NEED</h2>
         </section>
     </div>
@@ -334,11 +367,14 @@
             </svg>
         </section>
         <section class="flex flex-col space-y-5  h-[90%] items-center  lg:flex-row lg:justify-around">
-            <img src="assets/img/p1-b680ccc9.webp" class="w-[54vw] h-[40vh] lg:h-[75vh] lg:w-[30vw] rotate-12 rounded-2xl">
+            <img src="assets/img/p1-b680ccc9.webp"
+                 class="w-[54vw] h-[40vh] lg:h-[75vh] lg:w-[30vw] rotate-12 rounded-2xl">
             <section class="lg:w-[40%]">
-                <p class="text-2xl text-semiDarkPer font-extrabold text-center lg:text-7xl mt-[4vh]">"Pretzels reinvented! Crunch
+                <p class="text-2xl text-semiDarkPer font-extrabold text-center lg:text-7xl mt-[4vh]">"Pretzels
+                    reinvented! Crunch
                     crunch yum!"</p>
-                <p class="text-lg text-semiDarkPer GroteskRegular font-bold text-center mt-[6vh]">Selena - Verified Customer</p>
+                <p class="text-lg text-semiDarkPer GroteskRegular font-bold text-center mt-[6vh]">Selena - Verified
+                    Customer</p>
             </section>
         </section>
         <section>
@@ -390,7 +426,7 @@
             </ul>
             <ul class="space-y-2 text-lg font-semibold">
                 <li><b>CONTACT</b></li>
-                <li >Our Story</li>
+                <li>Our Story</li>
                 <li>Questions?</li>
                 <li>dev.mousavi</li>
             </ul>
@@ -398,7 +434,8 @@
         <section class="w-full flex flex-col ml-[5vw] mt-[4vh]">
             <label for="textme" class="text-white Grotesk">Sign up</label>
             <input type="text" id="textme" class="font-semibold w-[90%] box-border p-[2vh] text-lg text-titlePer ">
-            <button class="w-[90%]  p-[2vh] text-lg text-white border-cyan-50 border-2 mt-[4vh] GroteskBold rounded-2xl">SHOP
+            <button class="w-[90%]  p-[2vh] text-lg text-white border-cyan-50 border-2 mt-[4vh] GroteskBold rounded-2xl">
+                SHOP
                 NOW
             </button>
         </section>
@@ -409,5 +446,8 @@
         <p>Terms of Service</p></section>
 </footer>
 
+
+<script type="module" src="assets/js/main-js.js"></script>
+<script type="module" src="assets/js/main-func.js"></script>
 </body>
 </html>

@@ -758,12 +758,20 @@ video {
   top: 8vh;
 }
 
+.top-\[9vh\] {
+  top: 9vh;
+}
+
 .z-40 {
   z-index: 40;
 }
 
 .ml-\[15vw\] {
   margin-left: 15vw;
+}
+
+.ml-\[18vw\] {
+  margin-left: 18vw;
 }
 
 .ml-\[32vw\] {
@@ -830,6 +838,10 @@ video {
   height: 1.5rem;
 }
 
+.h-7 {
+  height: 1.75rem;
+}
+
 .h-\[100vh\] {
   height: 100vh;
 }
@@ -840,6 +852,10 @@ video {
 
 .h-\[120vh\] {
   height: 120vh;
+}
+
+.h-\[12vh\] {
+  height: 12vh;
 }
 
 .h-\[130vh\] {
@@ -918,12 +934,12 @@ video {
   height: 9vh;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .h-auto {
   height: auto;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-11 {
@@ -932,6 +948,10 @@ video {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-7 {
+  width: 1.75rem;
 }
 
 .w-\[10vw\] {
@@ -970,6 +990,10 @@ video {
   width: 37vw;
 }
 
+.w-\[40vw\] {
+  width: 40vw;
+}
+
 .w-\[50\%\] {
   width: 50%;
 }
@@ -1000,10 +1024,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[45\%\] {
-  width: 45%;
 }
 
 .rotate-12 {
@@ -1066,6 +1086,12 @@ video {
   row-gap: 1rem;
 }
 
+.space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.75rem * var(--tw-space-x-reverse));
@@ -1118,6 +1144,10 @@ video {
   border-radius: 1rem;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .border-2 {
   border-width: 2px;
 }
@@ -1125,6 +1155,11 @@ video {
 .border-cyan-50 {
   --tw-border-opacity: 1;
   border-color: rgb(236 254 255 / var(--tw-border-opacity));
+}
+
+.border-gray-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity));
 }
 
 .border-violet-900 {
@@ -1150,6 +1185,11 @@ video {
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 .bg-lowPre {
@@ -1179,6 +1219,10 @@ video {
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-\[2px\] {
+  padding: 2px;
 }
 
 .p-\[2vh\] {
@@ -1309,6 +1353,10 @@ video {
   line-height: 1.25rem;
 }
 
+.text-title-lit {
+  font-size: 1.8vw;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -1358,8 +1406,34 @@ video {
   opacity: 0.7;
 }
 
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-neutral-500 {
+  --tw-shadow-color: #737373;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 .cursorpointer > li {
   cursor: pointer;
+}
+
+.bod {
+  border: 0.7px #2c2a2a solid;
+}
+
+#search {
+  width: 15vw;
+  margin-top: 0.4vh;
+  border: none;
+  background-color: #F3F4F6;
+  outline: none;
+  direction: rtl;
+  padding: 2px 2px;
+  font-size: 1.2vw;
 }
 
 .bg-img2 {
@@ -1369,8 +1443,10 @@ video {
 }
 
 .sizemenu {
-  height: 7vh;
-  width: 7vw;
+  height: 5vh;
+  width: 5vw;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .bg-img {
@@ -1384,12 +1460,29 @@ video {
 .brand-size {
   height: 11vh;
   width: 40vw;
+  opacity: 0.4;
 }
 
 @media (min-width: 1024px) {
   .brand-size {
     height: 10vh;
     width: 10vw;
+  }
+}
+
+#bannerText{
+  animation: moveing 3s ease-in-out infinite;
+  animation-delay: 3s;
+}
+
+@keyframes moveing {
+  from{
+    margin-right: 0.5vw
+  }
+
+  to{
+    margin-right: 27vw;
+    opacity: .4;
   }
 }
 
@@ -1427,8 +1520,7 @@ video {
     width: 14vw;
     border-radius: 1.5rem;
     border-width: 2px;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+    font-size: 1.8vw;
     font-weight: 600;
   }
 
@@ -1587,6 +1679,10 @@ video {
     width: 15vw;
   }
 
+  .lg\:w-\[17vw\] {
+    width: 17vw;
+  }
+
   .lg\:w-\[18vw\] {
     width: 18vw;
   }
@@ -1711,6 +1807,10 @@ video {
 
   .lg\:text-\[1\.2vw\] {
     font-size: 1.2vw;
+  }
+
+  .lg\:text-title-big {
+    font-size: 8vw;
   }
 
   .lg\:font-bold {
