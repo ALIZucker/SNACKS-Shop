@@ -1,4 +1,4 @@
-import {showInput, showAlart, LowColor, scrollEvent,reviwcite} from "./main-func.js"
+import {showInput, showAlart, LowColor, scrollEvent, reviwcite} from "./main-func.js"
 
 
 const inputSearch = document.getElementById('search')
@@ -10,7 +10,10 @@ const titlesnack2 = document.querySelector('.titlesnack2')
 const TRYSOME = document.querySelector('.TRY-SOME')
 const BESTSELLERS = document.querySelector('.BESTSELLERS')
 const rewtext = document.querySelector('.rewtext');
+const selectnav = document.querySelector('.selectnav');
+const mobileMenu = document.querySelector('.mobileMenu');
 const rewtextname = document.querySelector('.rewtextname');
+
 const brandSize = document.querySelectorAll('.brand-size');
 const reviews = document.querySelectorAll('.reviews');
 const btns = document.querySelectorAll('.btn');
@@ -36,13 +39,7 @@ const reviwtext = [{
 
 let setindex = 0;
 let reviwindex = 0;
-///////////////-----------------------------------event
-inputSearch.addEventListener('input', inputHandler)
-botbanner.addEventListener('click', showAlart)
-document.addEventListener('scroll', scrollEventHandler)
-btns[1].addEventListener('click', NextHandler);
-btns[0].addEventListener('click', pervHandler);
-
+let closeicon = false;
 
 ///////////---------------------------------------function
 function inputHandler() {
@@ -73,22 +70,50 @@ function scrollEventHandler() {
 function NextHandler(event) {
     reviwindex += 1;
     reviews.forEach((value) => {
-        try {value.classList.remove("w-[60vw]","lg:w-[30vw]") }catch (e) {}
+        try {
+            value.classList.remove("w-[60vw]", "lg:w-[30vw]")
+        } catch (e) {
+        }
     });
     if (reviwindex >= reviews.length) {
         reviwindex = 0
     }
-    reviwcite(reviews,reviwindex,rewtext,rewtextname,reviwtext)
+    reviwcite(reviews, reviwindex, rewtext, rewtextname, reviwtext)
 }
 
 function pervHandler() {
     reviwindex -= 1;
     reviews.forEach((value) => {
-        try {value.classList.remove("w-[60vw]","lg:w-[30vw]")}catch (e) {}
+        try {
+            value.classList.remove("w-[60vw]", "lg:w-[30vw]")
+        } catch (e) {
+        }
     });
-
-    if (reviwindex < 0) {reviwindex = 3
+    if (reviwindex < 0) {
+        reviwindex = 3
     }
     console.log(reviwindex)
-    reviwcite(reviews,reviwindex,rewtext,rewtextname,reviwtext)
+    reviwcite(reviews, reviwindex, rewtext, rewtextname, reviwtext)
 }
+
+function navigationHandler() {
+    if (closeicon === false) {
+        selectnav.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="sizemenu">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" /></svg>`;
+        mobileMenu.style.display = "block";
+        closeicon = true;
+    } else {
+        selectnav.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                 class="sizemenu  "><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>`;
+        closeicon = false;
+        mobileMenu.style.display = "none";
+    }
+}
+
+///////////////-----------------------------------event
+inputSearch.addEventListener('input', inputHandler)
+botbanner.addEventListener('click', showAlart)
+document.addEventListener('scroll', scrollEventHandler)
+btns[1].addEventListener('click', NextHandler);
+btns[0].addEventListener('click', pervHandler);
+selectnav.addEventListener('click', navigationHandler);

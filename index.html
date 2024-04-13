@@ -12,13 +12,16 @@
 
 <header class="flex flex-ca w-full h-[12vh] items-center justify-between fixed z-40 bg-gray-100">
     <div class="ml-[3vw] lg:ml-4  lg:w-[37vw] w-[20vw] text-center">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-             class="sizemenu lg:hidden">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
-        </svg>
+        <section class="lg:hidden  selectnav">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                 stroke="currentColor"
+                 class="sizemenu ">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+            </svg>
+        </section>
         <ul class="hidden    lg:flex lg:flex-row space-x-6 text-semiDarkPer GroteskBold text-title-lit">
             <li><a href="shop.html">Shop</a></li>
-            <li><a href="indexLogin.html">Our Story</a></li>
+            <li><a href="#0" onclick="alert('صفحه ارتباط با ما')">Our Story</a></li>
             <li>
                 <div class="flex flex-row items-center space-x-1 border-2 border-gray-500 p-[2px] rounded-xl">
                     <input type="search" id="search"/>
@@ -41,13 +44,30 @@
     </div>
     <!--لگو سایت-->
     <div class="flex flex-row lg:w-[10vw] w-auto ml-[2vw] space-x-3 ">
-        <img src="assets/img/Profile-3f993ffc.svg" class="sizemenu">
+        <a href="indexLogin.html"> <img src="assets/img/Profile-3f993ffc.svg" class="sizemenu"></a>
         <img src="assets/img/cart-dark-4b9bbf20.svg" class="sizemenu">
     </div>
 </header>
 <!--نویگیشین منوی موبایلی -->
-<div class="lg:hidden absolute top-[17vh] z-40 left-0 w-full h-auto bg-gray-200">
-zxczxc
+<div class="lg:hidden  top-[12vh] z-40 left-0 w-full hidden h-full bg-gray-100 mobileMenu fixed">
+    <div class="text-center">
+        <h2 class="uppercase font-extrabold text-[20vw] h-[10vh]  text-semiDarkPer GroteskCompressedBold hover:text-[22vw] animFont"> shop</h2>
+        <section class=" w-full h-auto px-[16vw] space-y-4 mt-[3vh] box-border space-x-4 justify-center flex flex-row flex-wrap pt-[3vh]">
+            <button class="botStyle GroteskBold">all</button>
+            <button class="botStyle GroteskBold">PRETZEL THINS</button>
+            <button class="botStyle GroteskBold">OLIVES</button>
+            <button class="botStyle GroteskBold">BUNDLES</button>
+            <button class="botStyle GroteskBold">CHOCO PRETZELS</button>
+            <button class="botStyle GroteskBold">MERCH</button>
+        </section>
+        <h2 class="uppercase font-bold text-[20vw] h-[10vh] text-semiDarkPer GroteskCompressedBold hover:text-[22vw] animFont pt-[3vh]"> Our Story</h2>
+        <h2 class="uppercase font-bold text-[20vw]  h-[10vh] text-semiDarkPer GroteskCompressedBold hover:text-[22vw] animFont pt-[3vh]"> Find Olly's</h2>
+        <h2 class="uppercase font-extrabold text-[20vw]  h-[10vh] text-semiDarkPer GroteskCompressedBold hover:text-[22vw] animFont pt-[3vh]"> LOGIN</h2>
+    </div>
+
+    <div>
+
+    </div>
 </div>
 <!--پایان هدر سایت-->
 
@@ -149,7 +169,8 @@ zxczxc
     <!-- توضیحات اسنک-->
     <div class="bg-backmidel h-[150vh] lg:h-[90vh] w-full">
         <section class="  h-[25vh]  w-full  text-center pt-[3vh] font-extrabold text-title-super lg:text-8xl">
-            <section class="lg:opacity-0  lg:mt-[30vh] titlesnack2 h-[25vh]  w-full  text-center pt-[3vh] font-extrabold text-title-super lg:text-8xl">
+            <section
+                    class="lg:opacity-0  lg:mt-[30vh] titlesnack2 h-[25vh]  w-full  text-center pt-[3vh] font-extrabold text-title-super lg:text-8xl">
                 <h2 class="text-titlePer GroteskBold ">HOW OLLY’S <BR>SNACKS UP</h2>
             </section>
         </section>
@@ -189,7 +210,8 @@ zxczxc
     <!-- چرا اسنک-->
     <div>
         <section class="text-center mt-[4vh] relative">
-            <h2 class="bg-lowPre inline text-title-super lg:text-7xl font-bold text-white p-2 GroteskBold TRY-SOME">TRY SOME</h2>
+            <h2 class="bg-lowPre inline text-title-super lg:text-7xl font-bold text-white p-2 GroteskBold TRY-SOME">TRY
+                SOME</h2>
             <h2 class="bg-lowPre inline text-title-big lg:text-6xl font-bold text-white p-2 absolute GroteskBold left-[22vw] lg:left-[29vw] top-[7vh] lg:top-[10.5vh] rotate-12 BESTSELLERS">
                 BESTSELLERS</h2>
         </section>
@@ -199,19 +221,22 @@ zxczxc
                     <img src="assets/img/moveLine1-ce314c73.png">
                 </div>
 
-                <h3 class="lg:text-lg text-title-big1 p-[2vh] lg:p-[0]  GroteskWideMediumRegular h-[15vh] text-semiDarkPer font-bold  ">SOUR CREAM & ONION
+                <h3 class="lg:text-lg text-title-big1 p-[2vh] lg:p-[0]  GroteskWideMediumRegular h-[15vh] text-semiDarkPer font-bold  ">
+                    SOUR CREAM & ONION
                     PRETZEL THINS </h3>
                 <button class="btn-snack  Grotesk font-bold">SHOP NOW</button>
                 <ul class="flex flex-row justify-center mt-[2vh]">
                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="starRate">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                             class="starRate">
                             <path fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
                                   clip-rule="evenodd"/>
                         </svg>
                     </li>
                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="starRate">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                             class="starRate">
                             <path fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
                                   clip-rule="evenodd"/>
@@ -232,7 +257,9 @@ zxczxc
                         </svg>
 
                     </li>
-                    <li><span class="ml-[3vh] bg-gray-200 text-title-big1 lg:text-text-norm  Grotesk font-bold">2.7</span></li>
+                    <li><span
+                            class="ml-[3vh] bg-gray-200 text-title-big1 lg:text-text-norm  Grotesk font-bold">2.7</span>
+                    </li>
                 </ul>
             </article>
             <article class="box-post">
@@ -240,26 +267,30 @@ zxczxc
                     <img src="assets/img/moveLine2-58dadf29.png">
                 </div>
 
-                <h3 class="lg:text-lg text-title-big1 p-[2vh] lg:p-[0]  GroteskWideMediumRegular h-[15vh] text-semiDarkPer font-bold  ">SOUR CREAM
-                    </h3>
+                <h3 class="lg:text-lg text-title-big1 p-[2vh] lg:p-[0]  GroteskWideMediumRegular h-[15vh] text-semiDarkPer font-bold  ">
+                    SOUR CREAM
+                </h3>
                 <button class="btn-snack  Grotesk font-bold">SHOP NOW</button>
                 <ul class="flex flex-row justify-center mt-[2vh]">
                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="starRate">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                             class="starRate">
                             <path fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
                                   clip-rule="evenodd"/>
                         </svg>
                     </li>
                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="starRate">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                             class="starRate">
                             <path fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
                                   clip-rule="evenodd"/>
                         </svg>
                     </li>
                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="starRate">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                             class="starRate">
                             <path fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
                                   clip-rule="evenodd"/>
@@ -273,7 +304,9 @@ zxczxc
                         </svg>
 
                     </li>
-                    <li><span class="ml-[3vh] bg-gray-200 text-title-big1 lg:text-text-norm Grotesk font-bold">3.7</span></li>
+                    <li><span
+                            class="ml-[3vh] bg-gray-200 text-title-big1 lg:text-text-norm Grotesk font-bold">3.7</span>
+                    </li>
                 </ul>
             </article>
             <article class="box-post">
@@ -286,14 +319,16 @@ zxczxc
                 <button class="btn-snack  Grotesk font-bold">SHOP NOW</button>
                 <ul class="flex flex-row justify-center mt-[2vh]">
                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="starRate">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                             class="starRate">
                             <path fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
                                   clip-rule="evenodd"/>
                         </svg>
                     </li>
                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="starRate">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                             class="starRate">
                             <path fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
                                   clip-rule="evenodd"/>
@@ -314,7 +349,9 @@ zxczxc
                         </svg>
 
                     </li>
-                    <li><span class="ml-[3vh] bg-gray-200 text-title-big1 lg:text-text-norm Grotesk font-bold">2.7</span></li>
+                    <li><span
+                            class="ml-[3vh] bg-gray-200 text-title-big1 lg:text-text-norm Grotesk font-bold">2.7</span>
+                    </li>
                 </ul>
             </article>
             <article class="box-post">
@@ -322,19 +359,22 @@ zxczxc
                     <img src="assets/img/moveLine4-e1d31b0b.png">
                 </div>
 
-                <h3 class="lg:text-lg text-title-big1 p-[2vh] lg:p-[0]  GroteskWideMediumRegular h-[15vh] text-semiDarkPer font-bold  "> ONION
-                     </h3>
+                <h3 class="lg:text-lg text-title-big1 p-[2vh] lg:p-[0]  GroteskWideMediumRegular h-[15vh] text-semiDarkPer font-bold  ">
+                    ONION
+                </h3>
                 <button class="btn-snack  Grotesk font-bold">SHOP NOW</button>
                 <ul class="flex flex-row justify-center mt-[2vh]">
                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="starRate">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                             class="starRate">
                             <path fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
                                   clip-rule="evenodd"/>
                         </svg>
                     </li>
                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="starRate">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                             class="starRate">
                             <path fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
                                   clip-rule="evenodd"/>
@@ -355,7 +395,9 @@ zxczxc
                         </svg>
 
                     </li>
-                    <li><span class="ml-[3vh] bg-gray-200 text-title-big1 lg:text-text-norm Grotesk font-bold">2.7</span></li>
+                    <li><span
+                            class="ml-[3vh] bg-gray-200 text-title-big1 lg:text-text-norm Grotesk font-bold">2.7</span>
+                    </li>
                 </ul>
             </article>
 
@@ -396,10 +438,12 @@ zxczxc
             </section>
 
             <section class="lg:w-[40%] ">
-                <p class="text-title-big text-semiDarkPer font-extrabold text-center lg:text-7xl mt-[4vh] rewtext">"Pretzels
+                <p class="text-title-big text-semiDarkPer font-extrabold text-center lg:text-7xl mt-[4vh] rewtext">
+                    "Pretzels
                     reinvented! Crunch
                     crunch yum!"</p>
-                <p class="lg:text-lg text-title-big1 text-semiDarkPer GroteskRegular font-bold text-center mt-[6vh] rewtextname">Selena - Verified
+                <p class="lg:text-lg text-title-big1 text-semiDarkPer GroteskRegular font-bold text-center mt-[6vh] rewtextname">
+                    Selena - Verified
                     Customer</p>
             </section>
         </section>
@@ -459,14 +503,16 @@ zxczxc
         </section>
         <section class="w-full flex flex-col ml-[5vw] mt-[4vh]">
             <label for="textme" class="text-white lg:text-lg text-title-semi Grotesk">Sign up</label>
-            <input type="text" id="textme" class="font-semibold w-[90%] box-border p-[2vh] lg:text-lg text-title-big1 text-titlePer ">
+            <input type="text" id="textme"
+                   class="font-semibold w-[90%] box-border p-[2vh] lg:text-lg text-title-big1 text-titlePer ">
             <button class="w-[90%]  p-[2vh] lg:text-lg text-title-big1 text-white border-cyan-50 border-2 mt-[4vh] GroteskBold rounded-2xl">
                 SHOP
                 NOW
             </button>
         </section>
     </div>
-    <section class="flex flex-wrap lg:text-lg text-title-semi space-x-6 lg:space-x-14 text-white justify-center mt-[4vh] lg:mt-[16vh]">
+    <section
+            class="flex flex-wrap lg:text-lg text-title-semi space-x-6 lg:space-x-14 text-white justify-center mt-[4vh] lg:mt-[16vh]">
         <p>Privacy Policy</p>
         <p>Refund Policy</p>
         <p>Terms of Service</p></section>

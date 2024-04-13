@@ -4,6 +4,10 @@
 
 
 @layer  components {
+    .botStyle {
+        @apply border-8 border-indigo-800 w-auto box-border px-3 uppercase rounded-2xl text-semiDarkPer text-title-big1 hover:text-teal-50 hover:bg-titlePer ;
+    }
+
     .box-shop {
         @apply mt-[14vh] lg:mt-[20vh]  flex flex-col lg:flex-row lg:w-full lg:flex-wrap lg:justify-start  lg:gap-x-7 lg:space-y-3 lg:px-[5vw] lg:py-[2vh];
     }
@@ -76,18 +80,32 @@
     .inputme {
         @apply rounded-bl text-center text-lg font-semibold py-1 px-3 ;
     }
-    .reviews{
-       @apply w-[0] h-[43vh] object-fill lg:h-[65vh] lg:w-[0] lg:left-[6vw] lg:top-[4.5vh] left-[20vw]  rounded-2xl absolute ;
+
+    .reviews {
+        @apply w-[0] h-[43vh] object-fill lg:h-[65vh] lg:w-[0] lg:left-[6vw] lg:top-[4.5vh] left-[20vw]  rounded-2xl absolute ;
+    }
+    .inputmobile{
+        @apply text-title-semi rounded-xl text-right w-[50vw] h-[5vh] border-2 border-gray-500 px-[2vh] lg:w-[30vw] lg:mt-[5vh] lg:h-[8vh] lg:text-title-lit lg:px-7;
+    }
+    .smsinput{
+        @apply w-[8vw] text-center font-semibold h-[4vh] text-title-big1 border-2 border-gray-800 lg:w-[6vw] lg:h-[6vh] lg:text-title-lit;
     }
 }
 
 @layer utilities {
-    .reviewstran{ transition: all 1.5s ease-in-out;}
+    .shodow{
+        box-shadow: 1px 2px 7px 4px #999999;
+    }
+    .reviewstran {
+        transition: all 1.5s ease-in-out;
+    }
+
     .cursorpointer > li {
         cursor: pointer;
 
     }
-    .TRY-SOME,.BESTSELLERS{
+
+    .TRY-SOME, .BESTSELLERS {
         opacity: 0;
         transition: all 1.5s ease-in-out;
     }
@@ -121,7 +139,7 @@
     }
 
     .sizemenu {
-        @apply lg:w-[3.2vw] lg:h-[5vh] w-[8vw] h-[8vh] object-center object-contain;
+        @apply lg:w-[3.2vw] lg:h-[5vh] w-[11vw] h-[8vh] object-center object-contain;
     }
 
     .box-sizeing {
@@ -194,5 +212,9 @@
         font-weight: bold;
         margin-top: 3vh;
 
+    }
+
+    .animFont {
+        transition: all 0.2s linear;
     }
 }
