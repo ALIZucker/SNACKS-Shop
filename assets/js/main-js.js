@@ -52,7 +52,6 @@ let closeicon = false;
 
         login[1].classList.remove('hidden')
     }
-    console.log(login[1].classList)
 })()
 
 

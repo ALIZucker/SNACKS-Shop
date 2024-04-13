@@ -90,6 +90,9 @@
     .smsinput{
         @apply w-[8vw] text-center font-semibold h-[4vh] text-title-big1 border-2 border-gray-800 lg:w-[6vw] lg:h-[6vh] lg:text-title-lit;
     }
+    .linkcreate{
+        @apply capitalize font-semibold text-title-semi cursorpointer hover:text-lightPer lg:text-text-norm;
+    }
 }
 
 @layer utilities {
