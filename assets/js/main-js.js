@@ -15,6 +15,7 @@ const mobileMenu = document.querySelector('.mobileMenu');
 const rewtextname = document.querySelector('.rewtextname');
 
 const brandSize = document.querySelectorAll('.brand-size');
+const login = document.querySelectorAll('.login');
 const reviews = document.querySelectorAll('.reviews');
 const btns = document.querySelectorAll('.btn');
 
@@ -42,6 +43,20 @@ let reviwindex = 0;
 let closeicon = false;
 
 ///////////---------------------------------------function
+
+(function () {
+
+    if(window.location.search ==="?name=angelina"){
+        console.log(window.location.search )
+        login[0].classList.add('hidden');
+
+        login[1].classList.remove('hidden')
+    }
+    console.log(login[1].classList)
+})()
+
+
+
 function inputHandler() {
     let rez = dic.filter((value) => {
         return value.toLowerCase().includes(inputSearch.value)
