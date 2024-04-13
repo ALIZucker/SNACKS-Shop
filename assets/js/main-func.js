@@ -20,3 +20,27 @@ export function LowColor(arrelem) {
         elem.style.opacity="30%";
     })
 }
+export function scrollEvent(scrollY,titlesnack,titlesnack2,Try,Best) {
+    if (scrollY >= 840) {
+        $(document).ready(function () {
+            $(titlesnack).css({"margin-top":"2vh","opacity":"100%"})
+        })
+    }
+    if (scrollY >= 1300){
+        $(titlesnack2).css({"margin-top":"2vh","opacity":"100%"})
+    }
+
+    if (scrollY >= 1900){
+        $(Try).css({"opacity":"100%"})
+    }
+    if (scrollY >= 1900){
+        $(Best).css({"opacity":"100%","transition-delay":"1.5s"})
+    }
+}
+export function reviwcite(reviews,reviwindex,rewtext,rewtextname,reviwtext){
+
+    reviews[reviwindex].classList.add("w-[60vw]","lg:w-[30vw]")
+    console.log(reviews[reviwindex])
+    rewtext.innerText=reviwtext[reviwindex].text;
+    rewtextname.innerHTML=reviwtext[reviwindex].name;
+}

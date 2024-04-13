@@ -26,9 +26,10 @@
     }
 
     .btn-snack {
-        @apply  lg:border-violet-900 text-neutral-900 lg:text-lightPer w-[60vw] lg:ml-[1vw] lg:w-[13vw] h-[5vh] lg:h-[8vh] lg:border-2 border-4 lg:mt-[4vh] mt-[4vh] border-neutral-700 font-semibold lg:text-lg text-title-big1 rounded-2xl hover:rounded-[50%] hover:bg-titlePer hover:text-white;
+        @apply lg:border-violet-900 text-neutral-900 lg:text-lightPer w-[60vw] lg:ml-[1vw] lg:w-[13vw] h-[5vh] lg:h-[8vh] lg:border-2 border-4 lg:mt-[4vh] mt-[4vh] border-neutral-700 font-semibold lg:text-lg text-title-big1 rounded-2xl hover:rounded-[50%] hover:bg-titlePer hover:text-white;
     }
-    .starRate{
+
+    .starRate {
         @apply object-cover w-[5vw] h-[5vh] lg:w-[1.5vw] lg:h-[1.5vw];
     }
 
@@ -75,12 +76,20 @@
     .inputme {
         @apply rounded-bl text-center text-lg font-semibold py-1 px-3 ;
     }
+    .reviews{
+       @apply w-[0] h-[43vh] object-fill lg:h-[65vh] lg:w-[0] lg:left-[6vw] lg:top-[4.5vh] left-[20vw]  rounded-2xl absolute ;
+    }
 }
 
 @layer utilities {
+    .reviewstran{ transition: all 1.5s ease-in-out;}
     .cursorpointer > li {
         cursor: pointer;
 
+    }
+    .TRY-SOME,.BESTSELLERS{
+        opacity: 0;
+        transition: all 1.5s ease-in-out;
     }
 
     .spanSearch {
@@ -112,7 +121,7 @@
     }
 
     .sizemenu {
-        @apply w-[5vw] h-[5vh] object-center ;
+        @apply lg:w-[3.2vw] lg:h-[5vh] w-[8vw] h-[8vh] object-center object-contain;
     }
 
     .box-sizeing {
@@ -155,6 +164,9 @@
         to {
             opacity: 0;
         }
+    }
+    .titlesnack, .titlesnack2 {
+        transition: margin-top 1s linear, opacity 2s linear;
     }
 
     .geeks:hover img {

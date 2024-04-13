@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>SNACKS SOOO GOOD</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link type="text/css" rel="stylesheet" href="assets/css/output.css">
     <link type="text/css" rel="stylesheet" href="assets/fonts/stylesheet.css">
+    <link type="text/css" rel="icon" href="assets/img/great-taste-badge_no-date_450x.svg">
 </head>
 <body>
 
-<header class="flex flex-ca w-full h-[12vh] items-center justify-around fixed z-40 bg-gray-100">
-    <div class="ml-[3vw]  w-[40vw] text-center">
+<header class="flex flex-ca w-full h-[12vh] items-center justify-between fixed z-40 bg-gray-100">
+    <div class="ml-[3vw] lg:ml-4  lg:w-[37vw] w-[20vw] text-center">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
              class="sizemenu lg:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
         </svg>
-        <ul class="hidden  lg:flex lg:flex-row space-x-6 text-semiDarkPer GroteskBold text-title-lit">
+        <ul class="hidden    lg:flex lg:flex-row space-x-6 text-semiDarkPer GroteskBold text-title-lit">
             <li><a href="shop.html">Shop</a></li>
             <li><a href="indexLogin.html">Our Story</a></li>
             <li>
@@ -34,16 +36,19 @@
             </li>
         </ul>
     </div>
-    <div class="w-[20vw] h-[9vh]   lg:w-[8vw]">
+    <div class="w-[20vw]  h-[9vh] lg:mr-[17vw]  lg:w-[8vw] object-cover">
         <img src="assets/img/footer-logo-354062a9.svg">
     </div>
     <!--لگو سایت-->
-    <div class="flex flex-row w-[8vw] ml-[18vw] space-x-1">
+    <div class="flex flex-row lg:w-[10vw] w-auto ml-[2vw] space-x-3 ">
         <img src="assets/img/Profile-3f993ffc.svg" class="sizemenu">
         <img src="assets/img/cart-dark-4b9bbf20.svg" class="sizemenu">
     </div>
 </header>
-
+<!--نویگیشین منوی موبایلی -->
+<div class="lg:hidden absolute top-[17vh] z-40 left-0 w-full h-auto bg-gray-200">
+zxczxc
+</div>
 <!--پایان هدر سایت-->
 
 <main>
@@ -122,16 +127,16 @@
             <section class="h-[80vh]  lg:h-full w-full lg:w-[150vw]">
                 <img src="assets/img/snackGif-b17e7fba.webp" class="fit h-full lg:object-fill	">
             </section>
-            <section class="mt-[3vh] text-center lg:text-left">
+            <section class="mt-[25vh] text-center lg:text-left titlesnack opacity-0">
                 <section
                         class="hidden lg:block GroteskBold h-[25vh]  w-full  text-center p-[4vh] font-extrabold text-6xl">
                     <div class="text-titlePer">SNACKS THAT FEED YOUR FEEL<br> G
-                        <img src="assets/img/Smile-4eab8134.svg" class="face lg:w-[7vw] lg:h-[14vh] object-cover">
-                        <img src="assets/img/Smile-4eab8134.svg" class="face lg:w-[7vw] lg:h-[14vh] object-cover">
+                        <img src="assets/img/Smile-4eab8134.svg" class="face lg:w-[7vw] lg:h-[10vh] object-fill">
+                        <img src="assets/img/Smile-4eab8134.svg" class="face lg:w-[7vw] lg:h-[10vh] object-fill">
                         D
                     </div>
                 </section>
-                <p class="text-center  lg:text-left lg:text-title-lit lg:mt-[20vh] text-titlePer text-title-big1 font-medium GroteskRegular px-5">
+                <p class="text-center  lg:text-left lg:text-title-lit lg:mt-[20vh] text-titlePer text-title-big1 font-medium GroteskRegular px-5 ">
                     Our delicious
                     snacks (& us) have our hearts set on bringing happiness to the planet. We keep health
                     at the centre of all our creations, whilst also delivering an unbeatable flavour experience that
@@ -144,7 +149,7 @@
     <!-- توضیحات اسنک-->
     <div class="bg-backmidel h-[150vh] lg:h-[90vh] w-full">
         <section class="  h-[25vh]  w-full  text-center pt-[3vh] font-extrabold text-title-super lg:text-8xl">
-            <section class="  h-[25vh]  w-full  text-center pt-[3vh] font-extrabold text-title-super lg:text-8xl">
+            <section class="lg:opacity-0  lg:mt-[30vh] titlesnack2 h-[25vh]  w-full  text-center pt-[3vh] font-extrabold text-title-super lg:text-8xl">
                 <h2 class="text-titlePer GroteskBold ">HOW OLLY’S <BR>SNACKS UP</h2>
             </section>
         </section>
@@ -184,8 +189,8 @@
     <!-- چرا اسنک-->
     <div>
         <section class="text-center mt-[4vh] relative">
-            <h2 class="bg-lowPre inline text-title-super lg:text-7xl font-bold text-white p-2 GroteskBold">TRY SOME</h2>
-            <h2 class="bg-lowPre inline text-title-big lg:text-6xl font-bold text-white p-2 absolute GroteskBold left-[22vw] lg:left-[29vw] top-[7vh] lg:top-[10.5vh] rotate-12">
+            <h2 class="bg-lowPre inline text-title-super lg:text-7xl font-bold text-white p-2 GroteskBold TRY-SOME">TRY SOME</h2>
+            <h2 class="bg-lowPre inline text-title-big lg:text-6xl font-bold text-white p-2 absolute GroteskBold left-[22vw] lg:left-[29vw] top-[7vh] lg:top-[10.5vh] rotate-12 BESTSELLERS">
                 BESTSELLERS</h2>
         </section>
         <section class="mt-[14vh] lg:mt-[20vh]  flex flex-col lg:flex-row-reverse lg:w-full lg:justify-around">
@@ -369,7 +374,7 @@
         </section>
     </div>
     <!--بنر کلی-->
-    <div class="h-[87.5vh] lg:h-[98vh] bg-backpink flex flex-row justify-between items-center">
+    <div class="h-[87.5vh] lg:h-[98vh] bg-backpink flex flex-row justify-between items-center ">
         <section>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                  class="lg:w-11 lg:h-11 w-[9vw] h-[9vh] opacity-70 btn">
@@ -378,14 +383,23 @@
                       clip-rule="evenodd"/>
             </svg>
         </section>
-        <section class="flex flex-col space-y-5  h-[90%] items-center  lg:flex-row lg:justify-around">
-            <img src="assets/img/p1-b680ccc9.webp"
-                 class="w-[62vw] h-[60vh] object-fill lg:h-[75vh] lg:w-[30vw]  rounded-2xl">
-            <section class="lg:w-[40%]">
-                <p class="text-title-big text-semiDarkPer font-extrabold text-center lg:text-7xl mt-[4vh]">"Pretzels
+        <section class="flex flex-col space-y-5  h-[90%] items-center  lg:flex-row lg:justify-around ">
+            <section class="lg:w-[50%] h-[90%] lg:relative ">
+                <img src="assets/img/p1-b680ccc9.webp"
+                     class="reviews lg:w-[30vw] w-[60vw] reviewstran">
+                <img src="assets/img/p2-70240153.webp"
+                     class="reviews reviewstran">
+                <img src="assets/img/p4-0288d4ea.webp"
+                     class="reviews reviewstran">
+                <img src="assets/img/p3-52940ff4.webp"
+                     class="reviews reviewstran">
+            </section>
+
+            <section class="lg:w-[40%] ">
+                <p class="text-title-big text-semiDarkPer font-extrabold text-center lg:text-7xl mt-[4vh] rewtext">"Pretzels
                     reinvented! Crunch
                     crunch yum!"</p>
-                <p class="lg:text-lg text-title-big1 text-semiDarkPer GroteskRegular font-bold text-center mt-[6vh]">Selena - Verified
+                <p class="lg:text-lg text-title-big1 text-semiDarkPer GroteskRegular font-bold text-center mt-[6vh] rewtextname">Selena - Verified
                     Customer</p>
             </section>
         </section>
@@ -445,7 +459,7 @@
         </section>
         <section class="w-full flex flex-col ml-[5vw] mt-[4vh]">
             <label for="textme" class="text-white lg:text-lg text-title-semi Grotesk">Sign up</label>
-            <input type="text" id="textme" class="font-semibold w-[90%] box-border p-[2vh] text-lg text-titlePer ">
+            <input type="text" id="textme" class="font-semibold w-[90%] box-border p-[2vh] lg:text-lg text-title-big1 text-titlePer ">
             <button class="w-[90%]  p-[2vh] lg:text-lg text-title-big1 text-white border-cyan-50 border-2 mt-[4vh] GroteskBold rounded-2xl">
                 SHOP
                 NOW
