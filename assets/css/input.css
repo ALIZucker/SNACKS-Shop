@@ -22,11 +22,11 @@
     }
 
     .addToCart {
-        @apply w-[40vw] lg:ml-[1vw] lg:w-[13vw] h-[8vh] border-2 mt-[3vh] border-neutral-700 font-semibold text-lg rounded-2xl hover:rounded-[50%] hover:bg-titlePer hover:text-white  uppercase;
+        @apply w-[40vw] lg:ml-[1vw] lg:w-[13vw] h-[8vh] border-2 mt-[3vh] border-neutral-700 font-semibold lg:text-lg text-title-semi text-sky-100 rounded-2xl hover:rounded-[50%] hover:bg-titlePer hover:text-white  uppercase;
     }
 
     .select-size {
-        @apply box-sizeing text-center;
+        @apply box-sizeing text-center ;
     }
 
     .btn-snack {
@@ -93,6 +93,7 @@
     .linkcreate{
         @apply capitalize font-semibold text-title-semi cursorpointer hover:text-lightPer lg:text-text-norm;
     }
+
 }
 
 @layer utilities {
