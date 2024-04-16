@@ -4,12 +4,15 @@
 
 
 @layer  components {
+    .covimg{
+       position: absolute;
+    }
     .botStyle {
         @apply border-8 border-indigo-800 w-auto box-border px-3 uppercase rounded-2xl text-semiDarkPer text-title-big1 hover:text-teal-50 hover:bg-titlePer ;
     }
 
     .box-shop {
-        @apply mt-[14vh] lg:mt-[20vh]  flex flex-col lg:flex-row lg:w-full lg:flex-wrap lg:justify-start  lg:gap-x-7 lg:space-y-3 lg:px-[5vw] lg:py-[2vh];
+        @apply mt-[14vh] lg:mt-[20vh]  flex flex-col lg:flex-row lg:w-full lg:flex-wrap lg:justify-around  lg:gap-x-7 lg:space-y-3 lg:space-x-3 lg:px-[5vw] lg:py-[2vh];
     }
 
     .stick {
@@ -26,11 +29,11 @@
     }
 
     .select-size {
-        @apply box-sizeing text-center ;
+        @apply box-sizeing text-center text-title-semi lg:text-title-lit w-[25vw] lg:w-[13vw] lg:h-[13vh] h-[8vh];
     }
 
     .btn-snack {
-        @apply lg:border-violet-900 text-neutral-900 lg:text-lightPer w-[60vw] lg:ml-[1vw] lg:w-[13vw] h-[5vh] lg:h-[8vh] lg:border-2 border-4 lg:mt-[4vh] mt-[4vh] border-neutral-700 font-semibold lg:text-lg text-title-big1 rounded-2xl hover:rounded-[50%] hover:bg-titlePer hover:text-white;
+        @apply lg:border-violet-900 text-title-semi lg:text-text-norm text-neutral-900 lg:text-lightPer w-[60vw] lg:ml-[1vw] lg:w-[13vw] h-[6vh] lg:h-[8vh] lg:border-2 border-4 lg:mt-[4vh] mt-[4vh] border-neutral-700 font-semibold   rounded-2xl  hover:bg-titlePer hover:text-white;
     }
 
     .starRate {
@@ -46,7 +49,7 @@
     }
 
     .box-post {
-        @apply w-full box-border p-5 text-center lg:w-[20vw] ;
+        @apply w-full box-border  mt-5 text-center lg:w-[20vw] ;
     }
 
     .geeks {

@@ -10,26 +10,72 @@
 </head>
 <body>
 
-<header class="flex flex-row w-full h-[15vh] items-center fixed z-40 bg-gray-100">
-    <div class="ml-[3vw]">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-             class="sizemenu lg:hidden">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
-        </svg>
-        <ul class="hidden  lg:flex lg:flex-row space-x-6 text-semiDarkPer GroteskBold text-xl">
-            <li>Shop</li>
-            <li ><a href="indexLogin.html">Our Story</a></li>
-            <li>One Feeds two</li>
+<header class="flex flex-ca w-full h-[12vh] items-center justify-between fixed z-40 bg-gray-100">
+    <div class="ml-[3vw] lg:ml-4  lg:w-[37vw] w-[20vw] text-center">
+        <section class="lg:hidden  selectnav">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                 stroke="currentColor"
+                 class="sizemenu ">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+            </svg>
+        </section>
+        <ul class="hidden    lg:flex lg:flex-row space-x-6 text-semiDarkPer GroteskBold text-title-lit">
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#0" onclick="alert('صفحه ارتباط با ما')">Our Story</a></li>
+            <li>
+                <div class="flex flex-row items-center space-x-1 border-2 border-gray-500 p-[2px] rounded-xl">
+                    <input type="search" id="search"/>
+                    <div class="absolute flex flex-col bg-gray-200 top-[9vh] lg:w-[17vw] text  shadow-2xl shadow-neutral-500 bod">
+
+
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="currentColor" class="w-7 h-7">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/>
+                    </svg>
+
+                </div>
+            </li>
         </ul>
     </div>
-    <div class="w-[20vw] h-[9vh] ml-[32vw] lg:ml-[18vw] lg:w-[8vw]">
+    <div class="w-[20vw]  h-[9vh] lg:mr-[17vw]  lg:w-[8vw] object-cover">
         <img src="assets/img/footer-logo-354062a9.svg">
     </div>
-    <div class="flex flex-row w-[8vw] ml-[15vw] space-x-3 lg:ml-[28vw]">
-        <img src="assets/img/Profile-3f993ffc.svg" class="sizemenu">
+    <!--لگو سایت-->
+    <div class="flex flex-row lg:w-[10vw] w-auto ml-[2vw] space-x-3 ">
+        <a href="indexLogin.html"><img src="assets/img/Profile-3f993ffc.svg" class="sizemenu login">
+            <img src="assets/img/image-anj6.webp" class="sizemenu hidden login object-cover object-center"></a>
         <img src="assets/img/cart-dark-4b9bbf20.svg" class="sizemenu">
     </div>
 </header>
+<!--نویگیشین منوی موبایلی -->
+<div class="lg:hidden  top-[12vh] z-40 left-0 w-full hidden h-full bg-gray-100 mobileMenu fixed">
+    <div class="text-center">
+        <h2 class="uppercase font-extrabold text-[20vw] h-[10vh]  text-semiDarkPer GroteskCompressedBold hover:text-[22vw] animFont">
+            shop</h2>
+        <section
+                class=" w-full h-auto px-[16vw] space-y-4 mt-[3vh] box-border space-x-4 justify-center flex flex-row flex-wrap pt-[3vh]">
+            <button class="botStyle GroteskBold">all</button>
+            <button class="botStyle GroteskBold">PRETZEL THINS</button>
+            <button class="botStyle GroteskBold">OLIVES</button>
+            <button class="botStyle GroteskBold">BUNDLES</button>
+            <button class="botStyle GroteskBold">CHOCO PRETZELS</button>
+            <button class="botStyle GroteskBold">MERCH</button>
+        </section>
+        <h2 class="uppercase font-bold text-[20vw] h-[10vh] text-semiDarkPer GroteskCompressedBold hover:text-[22vw] animFont pt-[3vh]">
+            Our Story</h2>
+        <h2 class="uppercase font-bold text-[20vw]  h-[10vh] text-semiDarkPer GroteskCompressedBold hover:text-[22vw] animFont pt-[3vh]">
+            Find Olly's</h2>
+        <h2 class="uppercase font-extrabold text-[20vw]  h-[10vh] text-semiDarkPer GroteskCompressedBold hover:text-[22vw] animFont pt-[3vh]">
+            LOGIN</h2>
+    </div>
+
+    <div>
+
+    </div>
+</div>
+<!--پایان هدر سایت-->
 <main>
     <div class="flex flex-col lg:flex-row w-full lg:pt-[15vh]">
         <section class="relative lg:ml-[2vw] lg:mt-[2vh] object-fill flex flex-row w-full items-center justify-center lg:w-[55vw] bg-backpink box-border">
@@ -88,32 +134,32 @@
             <p class="font-bold text-semiDarkPer w-full text-left mt-[4vh] text-title-big1 Grotesk lg:text-2xl">SELECT
                 SIZE</p>
             <section class="flex flex-row justify-evenly w-full mt-[4vh] h-[14vh]  ">
-                <span class="select-size text-title-semi lg:text-title-lit w-[25vw] lg:w-[13vw] lg:h-[13vh] h-[8vh] GroteskCompressed">REGULAR<br>
+                <span class="select-size lg:text-lg text-title-semi  GroteskCompressed">REGULAR<br>
 (10 x 35g)</span>
-                <span class="select-size text-title-semi w-[25vw] lg:text-title-lit lg:w-[13vw] lg:h-[13vh] h-[8vh] GroteskCompressed">LARGE<br>
+                <span class="select-size lg:text-lg text-title-semi GroteskCompressed">LARGE<br>
 (7 x 140g)</span>
-                <span class="select-size text-title-semi w-[25vw] lg:text-title-lit lg:w-[13vw] lg:h-[13vh] h-[8vh] GroteskCompressed">BUNDLE<br>
+                <span class="select-size lg:text-lg text-title-semi  GroteskCompressed">BUNDLE<br>
 (40 x 35g)</span>
             </section>
             <p class="font-bold text-semiDarkPer GroteskCompressed w-full text-left mt-[4vh] lg:text-2xl text-title-big1 flex flex-row justify-between"><span>PURCHASE
                 TYPE </span><span>12,000</span></p>
 
             <div class="w-full flex flex-row justify-evenly ">
-                <section class="flex flex-row-reverse justify-around items-center space-x-5 w-[50%] mt-[3vh]">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="lg:w-6 lg:h-6 w-[7vw] h-[7vh]">
+                <section class="flex flex-row-reverse justify-around items-center space-x-5 w-[50%] mt-[3vh] ">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="adadkam lg:w-6 lg:h-6 w-[7vw] h-[7vh]">
                         <path fill-rule="evenodd"
                               d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z"
                               clip-rule="evenodd"/>
                     </svg>
-                    <p class="text-center font-bold lg:text-2xl text-title-semi">1</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="lg:w-6 lg:h-6 w-[7vw] h-[7vh]">
+                    <p class="text-center font-bold lg:text-2xl text-title-semi showtext">1</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="adadezafe lg:w-6 lg:h-6 w-[7vw] h-[7vh]">
                         <path fill-rule="evenodd"
                               d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm3 10.5a.75.75 0 0 0 0-1.5H9a.75.75 0 0 0 0 1.5h6Z"
                               clip-rule="evenodd"/>
                     </svg>
 
                 </section>
-                <button class="addToCart Grotesk bg-semiDarkPer">add to cart</button>
+                <button class="addToCart Grotesk bg-semiDarkPer" onclick="alert('add to cart')">add to cart</button>
 
             </div>
         </section>
@@ -159,7 +205,7 @@
             <img src="assets/img/girl.webp" class="lg:object-fill lg:h-full w-full">
         </section>
     </div>
-    <div class="bg-sky-200 ">
+    <div  >
         <section class="text-center mt-[45vh] lg:mt-[6vh] relative">
             <h2 class="bg-lowPre inline text-title-super lg:text-8xl font-bold text-white p-2 GroteskBold">TRY SOME</h2>
             <h2 class="bg-lowPre inline text-title-big lg:text-7xl font-bold text-white p-2 absolute GroteskBold left-[18vw] lg:left-[29vw] top-[7vh] lg:top-[13.5vh] rotate-6">
@@ -338,51 +384,53 @@
     <!--پست های خرید-->
 </main>
 
-<footer class="bg-semiDarkPer h-[130vh] lg:h-[90vh]">
+<footer class="bg-semiDarkPer h-[110vh] lg:h-[95vh]">
     <div class="flex flex-row flex-wrap lg:flex-nowrap  items-center px-5 py-[4vh]">
         <img src="assets/img/footer-logo-354062a9.svg" class="w-[35vw] lg:w-[18vw]">
         <section
-                class="h-[25vh]  w-full text-white text-center    font-extrabold text-6xl lg:text-9xl">
+                class="h-[25vh]  w-full text-white text-center mt-[4vh]  font-extrabold text-[15vw] lg:text-9xl">
             FEEL G
-            <img src="assets/img/face-4be56343.svg" class="face lg:w-[9vw] lg:h-[16vh] object-cover">
-            <img src="assets/img/face-4be56343.svg" class="face lg:w-[9vw] lg:h-[16vh] object-cover">D
+            <img src="assets/img/face-4be56343.svg" class="face lg:w-[7vw] lg:h-[14vh] object-cover">
+            <img src="assets/img/face-4be56343.svg" class="face lg:w-[7vw] lg:h-[14vh] object-cover">D
         </section>
     </div>
     <hr class="px-[5vw]">
 
     <div class="flex flex-row flex-wrap lg:flex-nowrap ">
         <section class="flex flex-row w-full justify-evenly mt-[4vh] text-white ">
-            <ul class="space-y-2 text-lg font-semibold">
+            <ul class="space-y-2 lg:text-lg text-title-semi font-semibold">
                 <li><b>SHOP</b></li>
-                <li>Shop All</li>
-                <li>Pretzel Thins</li>
-                <li>Olives</li>
-                <li>Shop All</li>
+                <li  class="lg:text-text-norm">Shop All</li>
+                <li  class="lg:text-text-norm">Pretzel Thins</li>
+                <li  class="lg:text-text-norm">Olives</li>
+                <li  class="lg:text-text-norm">Shop All</li>
             </ul>
-            <ul class="space-y-2 text-lg font-semibold">
+            <ul class="space-y-2 lg:text-lg text-title-semi font-semibold">
                 <li><b>COMPANY</b></li>
-                <li>Shop All</li>
-                <li>Pretzel Thins</li>
-                <li>One Feeds Two</li>
+                <li  class="lg:text-text-norm">Shop All</li>
+                <li  class="lg:text-text-norm">Pretzel Thins</li>
+                <li  class="lg:text-text-norm">One Feeds Two</li>
 
             </ul>
-            <ul class="space-y-2 text-lg font-semibold">
+            <ul class="space-y-2 lg:text-lg text-title-semi font-semibold">
                 <li><b>CONTACT</b></li>
-                <li>Our Story</li>
-                <li>Questions?</li>
-                <li>dev.mousavi</li>
+                <li class="lg:text-text-norm">Our Story</li>
+                <li class="lg:text-text-norm">Questions?</li>
+                <li class="lg:text-text-norm">dev.mousavi</li>
             </ul>
         </section>
         <section class="w-full flex flex-col ml-[5vw] mt-[4vh]">
-            <label for="textme" class="text-white Grotesk">Sign up</label>
-            <input type="text" id="textme" class="font-semibold w-[90%] box-border p-[2vh] text-lg text-titlePer ">
-            <button class="w-[90%]  p-[2vh] text-lg text-white border-cyan-50 border-2 mt-[4vh] GroteskBold rounded-2xl">
+            <label for="textme" class="text-white lg:text-lg text-title-semi Grotesk">Sign up</label>
+            <input type="text" id="textme"
+                   class="font-semibold w-[90%] box-border p-[2vh] lg:text-lg text-title-big1 text-titlePer ">
+            <button class="w-[90%]  p-[2vh] lg:text-lg text-title-big1 text-white border-cyan-50 border-2 mt-[4vh] GroteskBold rounded-2xl">
                 SHOP
                 NOW
             </button>
         </section>
     </div>
-    <section class="flex flex-wrap space-x-6 lg:space-x-14 text-white justify-center mt-[4vh] lg:mt-[16vh]">
+    <section
+            class="flex flex-wrap lg:text-text-norm text-title-lit space-x-6 lg:space-x-14 text-white justify-center items-center mt-[4vh] lg:mt-[16vh]">
         <p>Privacy Policy</p>
         <p>Refund Policy</p>
         <p>Terms of Service</p></section>

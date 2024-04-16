@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <title>Shop</title>
     <link type="text/css" rel="stylesheet" href="assets/css/output.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link type="text/css" rel="stylesheet" href="assets/fonts/stylesheet.css">
+    <link type="text/css" rel="icon" href="assets/img/great-taste-badge_no-date_450x.svg">
 </head>
 <body>
 <header class="flex flex-row w-full h-[15vh] items-center fixed z-40 bg-gray-100">
@@ -28,9 +30,9 @@
     </div>
 </header>
 <main class="pt-[20vh] w-full">
-    <h1 class="text-center text-semiDarkPer font-extrabold text-8xl GroteskCompressedBold">SHOP SNACKS</h1>
+    <h1 class="text-center text-semiDarkPer font-extrabold lg:text-8xl text-title-super GroteskCompressedBold">SHOP SNACKS</h1>
     <div class="text-center stick lg:static">
-        <select class="lg:hidden border-2 border-violet-900 text-lightPer px-[5vw] py-[1.4vh] text-xl font-semibold rounded-2xl w-[80%]">
+        <select class="lg:hidden selection border-2 border-violet-900 text-lightPer px-[5vw] py-[1.4vh] text-title-semi  lg:text-xl font-semibold rounded-2xl w-[80%]">
             <option>ALL</option>
             <option>PRETZEL THINS</option>
             <option>OLIVES</option>
@@ -38,7 +40,7 @@
             <option>BUNDLES</option>
             <option>MERCH</option>
         </select>
-        <ul class="hidden  lg:flex lg:flex-row lg:w-full lg:font-semibold lg:space-x-14 lg:text-semiDarkPer cursorpointer justify-center">
+        <ul class="hidden Lgselection  lg:flex lg:flex-row lg:w-full lg:font-semibold lg:space-x-14 lg:text-semiDarkPer cursorpointer justify-center">
             <li>ALL</li>
             <li>PRETZEL THINS</li>
             <li>OLIVES</li>
@@ -51,561 +53,93 @@
     <hr class="mt-[3vh] font-bold bg-lowPre">
     <section
             class="box-shop">
-        <article class="box-post">
-            <div class=" rounded-2xl relative">
-                <img src="assets/img/over1.webp" class="absolute rounded-2xl opacity-0 hover:opacity-100 trans-post">
-                <img src="assets/img/o3.webp">
 
-            </div>
 
-            <h3 class="text-lg GroteskCompressed h-[10vh] mt-[3vh] text-semiDarkPer font-bold  ">Oll-timate Pretzel
-                Thins Bundle</h3>
-            <button class="btn-snack border-violet-900 text-lightPer Grotesk font-bold"> View product</button>
-            <ul class="flex flex-row justify-center mt-[2vh]">
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                         stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                         stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/>
-                    </svg>
-
-                </li>
-                <li><span class="p-2 font-semibold Grotesk font-bold">2.7</span></li>
-            </ul>
-        </article>
-        <article class="box-post">
-            <div class=" rounded-2xl relative">
-                <img src="assets/img/over2.webp" class="absolute rounded-2xl opacity-0 hover:opacity-100 trans-post">
-                <img src="assets/img/o2.webp">
-
-            </div>
-
-            <h3 class="text-lg GroteskCompressed h-[10vh] mt-[3vh] text-semiDarkPer font-bold ">Multi-Seed Sesame
-                Pretzel Thins</h3>
-            <button class="btn-snack border-violet-900 text-lightPer Grotesk font-bold">View product</button>
-            <ul class="flex flex-row justify-center mt-[2vh]">
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                         stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/>
-                    </svg>
-
-                </li>
-                <li><span class="p-2 font-semibold Grotesk font-bold">4.2</span></li>
-            </ul>
-        </article>
-        <article class="box-post">
-            <div class=" rounded-2xl relative">
-                <img src="assets/img/over3.webp" class="absolute rounded-2xl opacity-0 hover:opacity-100 trans-post">
-                <img src="assets/img/o1.webp">
-
-            </div>
-
-            <h3 class="text-lg GroteskCompressed h-[10vh] mt-[3vh] text-semiDarkPer font-bold ">Sweet Chilli Pretzel
-                Thins</h3>
-            <button class="btn-snack border-violet-900 text-lightPer Grotesk font-bold">View product</button>
-            <ul class="flex flex-row justify-center mt-[2vh]">
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li><span class="p-2 font-semibold Grotesk ">5</span></li>
-            </ul>
-        </article>
-        <article class="box-post">
-            <div class=" rounded-2xl relative">
-                <img src="assets/img/over1.webp" class="absolute rounded-2xl opacity-0 hover:opacity-100 trans-post">
-                <img src="assets/img/o3.webp">
-
-            </div>
-
-            <h3 class="text-lg GroteskCompressed h-[10vh] mt-[3vh] text-semiDarkPer font-bold  ">Oll-timate Pretzel
-                Thins Bundle</h3>
-            <button class="btn-snack border-violet-900 text-lightPer Grotesk font-bold"> View product</button>
-            <ul class="flex flex-row justify-center mt-[2vh]">
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                         stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                         stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/>
-                    </svg>
-
-                </li>
-                <li><span class="p-2 font-semibold Grotesk font-bold">2.7</span></li>
-            </ul>
-        </article>
-        <article class="box-post">
-            <div class=" rounded-2xl relative">
-                <img src="assets/img/Olives-Chilli-Case_450x.jpg"
-                     class="absolute rounded-2xl opacity-0 hover:opacity-100 trans-post">
-                <img src="assets/img/Olives-Chilli_450x.png">
-
-            </div>
-
-            <h3 class="text-lg GroteskCompressed h-[10vh] mt-[3vh] text-semiDarkPer font-bold ">Multi-Seed Sesame
-                Pretzel Thins</h3>
-            <button class="btn-snack border-violet-900 text-lightPer Grotesk font-bold">View product</button>
-            <ul class="flex flex-row justify-center mt-[2vh]">
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                         stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/>
-                    </svg>
-
-                </li>
-                <li><span class="p-2 font-semibold Grotesk font-bold">4.2</span></li>
-            </ul>
-        </article>
-        <article class="box-post">
-            <div class=" rounded-2xl relative">
-                <img src="assets/img/Olives-Garlic-Case_450x.jpg"
-                     class="absolute rounded-2xl opacity-0 hover:opacity-100 trans-post">
-                <img src="assets/img/Olives-Garlic_450x.png">
-
-            </div>
-
-            <h3 class="text-lg GroteskCompressed h-[10vh] mt-[3vh] text-semiDarkPer font-bold ">Sweet Chilli Pretzel
-                Thins</h3>
-            <button class="btn-snack border-violet-900 text-lightPer Grotesk font-bold">View product</button>
-            <ul class="flex flex-row justify-center mt-[2vh]">
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li><span class="p-2 font-semibold Grotesk ">5</span></li>
-            </ul>
-        </article>
-        <article class="box-post">
-            <div class=" rounded-2xl relative">
-                <img src="assets/img/Olives-Lemon-Case_450x.jpg"
-                     class="absolute rounded-2xl opacity-0 hover:opacity-100 trans-post">
-                <img src="assets/img/Olives-Lemon_450x.png">
-
-            </div>
-
-            <h3 class="text-lg GroteskCompressed h-[10vh] mt-[3vh] text-semiDarkPer font-bold  ">Oll-timate Pretzel
-                Thins Bundle</h3>
-            <button class="btn-snack border-violet-900 text-lightPer Grotesk font-bold"> View product</button>
-            <ul class="flex flex-row justify-center mt-[2vh]">
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                         stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                         stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/>
-                    </svg>
-
-                </li>
-                <li><span class="p-2 font-semibold Grotesk font-bold">2.7</span></li>
-            </ul>
-        </article>
-        <article class="box-post">
-            <div class=" rounded-2xl relative">
-                <img src="assets/img/DarkChoc-Case_360x.jpg"
-                     class="absolute rounded-2xl opacity-0 hover:opacity-100 trans-post">
-                <img src="assets/img/DarkChoc_360x.png">
-
-            </div>
-
-            <h3 class="text-lg GroteskCompressed h-[10vh] mt-[3vh] text-semiDarkPer font-bold ">Sweet Chilli Pretzel
-                Thins</h3>
-            <button class="btn-snack border-violet-900 text-lightPer Grotesk font-bold">View product</button>
-            <ul class="flex flex-row justify-center mt-[2vh]">
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li><span class="p-2 font-semibold Grotesk ">5</span></li>
-            </ul>
-        </article>
-        <article class="box-post">
-            <div class=" rounded-2xl relative">
-                <img src="assets/img/Olives-Lemon-Case_450x.jpg"
-                     class="absolute rounded-2xl opacity-0 hover:opacity-100 trans-post">
-                <img src="assets/img/MilkChoc_360x.png">
-
-            </div>
-
-            <h3 class="text-lg GroteskCompressed h-[10vh] mt-[3vh] text-semiDarkPer font-bold  ">Oll-timate Pretzel
-                Thins Bundle</h3>
-            <button class="btn-snack border-violet-900 text-lightPer Grotesk font-bold"> View product</button>
-            <ul class="flex flex-row justify-center mt-[2vh]">
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                         stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                         stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/>
-                    </svg>
-
-                </li>
-                <li><span class="p-2 font-semibold Grotesk font-bold">2.7</span></li>
-            </ul>
-        </article>
-        <article class="box-post">
-            <div class=" rounded-2xl relative">
-                <img src="assets/img/Ollys-Hat_450xx.jpg"
-                     class="absolute rounded-2xl opacity-0 hover:opacity-100 trans-post">
-                <img src="assets/img/Hat_450x.jpg">
-
-            </div>
-
-            <h3 class="text-lg GroteskCompressed h-[10vh] mt-[3vh] text-semiDarkPer font-bold ">Sweet Chilli Pretzel
-                Thins</h3>
-            <button class="btn-snack border-violet-900 text-lightPer Grotesk font-bold">View product</button>
-            <ul class="flex flex-row justify-center mt-[2vh]">
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li><span class="p-2 font-semibold Grotesk ">5</span></li>
-            </ul>
-        </article>
-        <article class="box-post">
-            <div class=" rounded-2xl relative">
-                <img src="assets/img/OllySocks_450x.jpg"
-                     class="absolute rounded-2xl opacity-0 hover:opacity-100 trans-post">
-                <img src="assets/img/Socks_450x.jpg">
-
-            </div>
-
-            <h3 class="text-lg GroteskCompressed h-[10vh] mt-[3vh] text-semiDarkPer font-bold  ">Oll-timate Pretzel
-                Thins Bundle</h3>
-            <button class="btn-snack border-violet-900 text-lightPer Grotesk font-bold"> View product</button>
-            <ul class="flex flex-row justify-center mt-[2vh]">
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd"
-                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                              clip-rule="evenodd"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                         stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/>
-                    </svg>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                         stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/>
-                    </svg>
-
-                </li>
-                <li><span class="p-2 font-semibold Grotesk font-bold">2.7</span></li>
-            </ul>
-        </article>
     </section>
     <div class="p-[5%] h-auto flex flex-col items-center lg:flex-row lg:flex-wrap">
         <section class="w-full object-cover lg:w-[50%]">
             <img src="assets/img/Ollys-Update32185.jpg">
         </section>
         <section class="w-full lg:w-[50%] lg:px-8">
-            <h1 class="mt-[3vh] text-5xl font-extrabold text-semiDarkPer">PRETZEL THINS</h1>
-            <p class="mt-[3vh] text-lg font-semibold text-semiDarkPer">The planet's thinnest & crispiest pretzels! Less
+            <h1 class="mt-[3vh] lg:text-5xl text-title-big font-extrabold text-semiDarkPer">PRETZEL THINS</h1>
+            <p class="mt-[3vh] lg:text-lg text-title-semi font-semibold text-semiDarkPer">The planet's thinnest & crispiest pretzels! Less
                 fat & fewer calories than crisps & popcorn. Oven-baked
                 with super seasonings. All vegan too.</p>
         </section>
         <section class="w-full lg:w-[50%] lg:px-8">
-            <h1 class="mt-[3vh] text-5xl font-extrabold text-semiDarkPer">CHOCO PRETZELS</h1>
-            <p class="mt-[3vh] text-lg font-semibold text-semiDarkPer">These are ridiculous. Our signature pretzel thins
+            <h1 class="mt-[3vh] lg:text-5xl text-title-big  font-extrabold text-semiDarkPer">CHOCO PRETZELS</h1>
+            <p class="mt-[3vh] lg:text-lg font-semibold text-title-semi text-semiDarkPer">These are ridiculous. Our signature pretzel thins
                 are lightly salted before being delicately enrobed in luxurious 100% Belgian chocolate coats. Choc full
                 of goodness</p>
         </section>
-        <section class="w-full object-cover lg:w-[50%]">
+        <section class="w-full object-cover lg:w-[50%] sm:mt-[4vh]">
             <img src="assets/img/Ollys-Update32211.jpg">
         </section>
-        <section class="w-full object-cover lg:w-[50%]">
+        <section class="w-full object-cover lg:w-[50%] sm:mt-[4vh]">
             <img src="assets/img/Olives_-_Garlic_Basil_-Pack.jpg">
         </section>
         <section class="w-full lg:w-[50%] lg:px-8">
-            <h1 class="mt-[3vh] text-5xl font-extrabold text-semiDarkPer">OLIVES</h1>
-            <p class="mt-[3vh] text-lg font-semibold text-semiDarkPer">Glorious Greek olives dressed to impress in
+            <h1 class="mt-[3vh] text-5xl font-extrabold text-title-big text-semiDarkPer">OLIVES</h1>
+            <p class="mt-[3vh] text-lg font-semibold text-title-semi text-semiDarkPer">Glorious Greek olives dressed to impress in
                 mouthwatering marinades. Our snazzy snack pouches contain no stones, no messy oils and no artificials.
                 O’live the dream!</p>
         </section>
     </div>
 </main>
-<footer class="bg-semiDarkPer h-[130vh] lg:h-[90vh]">
+<footer class="bg-semiDarkPer h-[110vh] lg:h-[95vh]">
     <div class="flex flex-row flex-wrap lg:flex-nowrap  items-center px-5 py-[4vh]">
         <img src="assets/img/footer-logo-354062a9.svg" class="w-[35vw] lg:w-[18vw]">
         <section
-                class="h-[25vh]  w-full text-white text-center    font-extrabold text-6xl lg:text-9xl">
+                class="h-[25vh]  w-full text-white text-center mt-[4vh]  font-extrabold text-[15vw] lg:text-9xl">
             FEEL G
-            <img src="assets/img/face-4be56343.svg" class="face lg:w-[9vw] lg:h-[16vh] object-cover">
-            <img src="assets/img/face-4be56343.svg" class="face lg:w-[9vw] lg:h-[16vh] object-cover">D
+            <img src="assets/img/face-4be56343.svg" class="face lg:w-[7vw] lg:h-[14vh] object-cover">
+            <img src="assets/img/face-4be56343.svg" class="face lg:w-[7vw] lg:h-[14vh] object-cover">D
         </section>
     </div>
     <hr class="px-[5vw]">
 
     <div class="flex flex-row flex-wrap lg:flex-nowrap ">
         <section class="flex flex-row w-full justify-evenly mt-[4vh] text-white ">
-            <ul class="space-y-2 text-lg font-semibold">
+            <ul class="space-y-2 lg:text-lg text-title-semi font-semibold">
                 <li><b>SHOP</b></li>
-                <li>Shop All</li>
-                <li>Pretzel Thins</li>
-                <li>Olives</li>
-                <li>Shop All</li>
+                <li  class="lg:text-text-norm">Shop All</li>
+                <li  class="lg:text-text-norm">Pretzel Thins</li>
+                <li  class="lg:text-text-norm">Olives</li>
+                <li  class="lg:text-text-norm">Shop All</li>
             </ul>
-            <ul class="space-y-2 text-lg font-semibold">
+            <ul class="space-y-2 lg:text-lg text-title-semi font-semibold">
                 <li><b>COMPANY</b></li>
-                <li>Shop All</li>
-                <li>Pretzel Thins</li>
-                <li>One Feeds Two</li>
+                <li  class="lg:text-text-norm">Shop All</li>
+                <li  class="lg:text-text-norm">Pretzel Thins</li>
+                <li  class="lg:text-text-norm">One Feeds Two</li>
 
             </ul>
-            <ul class="space-y-2 text-lg font-semibold">
+            <ul class="space-y-2 lg:text-lg text-title-semi font-semibold">
                 <li><b>CONTACT</b></li>
-                <li>Our Story</li>
-                <li>Questions?</li>
-                <li>dev.mousavi</li>
+                <li class="lg:text-text-norm">Our Story</li>
+                <li class="lg:text-text-norm">Questions?</li>
+                <li class="lg:text-text-norm">dev.mousavi</li>
             </ul>
         </section>
         <section class="w-full flex flex-col ml-[5vw] mt-[4vh]">
-            <label for="textme" class="text-white Grotesk">Sign up</label>
-            <input type="text" id="textme" class="font-semibold w-[90%] box-border p-[2vh] text-lg text-titlePer ">
-            <button class="w-[90%]  p-[2vh] text-lg text-white border-cyan-50 border-2 mt-[4vh] GroteskBold rounded-2xl">
+            <label for="textme" class="text-white lg:text-lg text-title-semi Grotesk">Sign up</label>
+            <input type="text" id="textme"
+                   class="font-semibold w-[90%] box-border p-[2vh] lg:text-lg text-title-big1 text-titlePer ">
+            <button class="w-[90%]  p-[2vh] lg:text-lg text-title-big1 text-white border-cyan-50 border-2 mt-[4vh] GroteskBold rounded-2xl">
                 SHOP
                 NOW
             </button>
         </section>
     </div>
-    <section class="flex flex-wrap space-x-6 lg:space-x-14 text-white justify-center mt-[4vh] lg:mt-[16vh]">
+    <section
+            class="flex flex-wrap lg:text-text-norm text-title-lit space-x-6 lg:space-x-14 text-white justify-center items-center mt-[4vh] lg:mt-[16vh]">
         <p>Privacy Policy</p>
         <p>Refund Policy</p>
         <p>Terms of Service</p></section>
 </footer>
+
+
+<script type="module" src="assets/js/shopmenu.js"></script>
+<script type="module" src="assets/js/main-func.js"></script>
 </body>
 </html>
