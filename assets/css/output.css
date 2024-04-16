@@ -1598,6 +1598,7 @@ video {
 
 .bod {
   border: 0.7px #2c2a2a solid;
+  cursor: pointer;
 }
 
 #search {
