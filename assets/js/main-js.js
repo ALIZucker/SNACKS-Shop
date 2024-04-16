@@ -60,6 +60,7 @@ function inputHandler() {
     let rez = dic.filter((value) => {
         return value.toLowerCase().includes(inputSearch.value)
     })
+    rezultBox.style.display='block';
     showInput(rez, rezultBox, inputSearch)
 }
 

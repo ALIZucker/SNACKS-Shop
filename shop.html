@@ -9,26 +9,73 @@
     <link type="text/css" rel="icon" href="assets/img/great-taste-badge_no-date_450x.svg">
 </head>
 <body>
-<header class="flex flex-row w-full h-[15vh] items-center fixed z-40 bg-gray-100">
-    <div class="ml-[3vw]">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-             class="sizemenu lg:hidden">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
-        </svg>
-        <ul class="hidden  lg:flex lg:flex-row space-x-6 text-semiDarkPer GroteskBold text-xl">
-            <li>Shop</li>
-            <li ><a href="indexLogin.html">Our Story</a></li>
-            <li>One Feeds two</li>
+<header class="flex flex-ca w-full h-[12vh] items-center justify-between fixed z-40 bg-gray-100">
+    <div class="ml-[3vw] lg:ml-4  lg:w-[37vw] w-[20vw] text-center">
+        <section class="lg:hidden  selectnav">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                 stroke="currentColor"
+                 class="sizemenu ">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+            </svg>
+        </section>
+        <ul class="hidden    lg:flex lg:flex-row space-x-6 text-semiDarkPer GroteskBold text-title-lit">
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#0" onclick="alert('صفحه ارتباط با ما')">Our Story</a></li>
+            <li>
+                <div class="flex flex-row items-center space-x-1 border-2 border-gray-500 p-[2px] ">
+                    <input type="search" id="search" onfocus="this.style.width='15vw'"/>
+                    <div class="absolute flex flex-col bg-gray-200 top-[9vh] lg:w-[17vw] text  shadow-2xl shadow-neutral-500 hidden bod">
+
+
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="currentColor" class="w-7 h-7">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/>
+                    </svg>
+
+                </div>
+            </li>
         </ul>
     </div>
-    <div class="w-[20vw] h-[9vh] ml-[32vw] lg:ml-[18vw] lg:w-[8vw]">
+    <div class="w-[20vw]  h-[9vh] lg:mr-[17vw]  lg:w-[8vw] object-cover">
         <img src="assets/img/footer-logo-354062a9.svg">
     </div>
-    <div class="flex flex-row w-[8vw] ml-[15vw] space-x-3 lg:ml-[28vw]">
-        <img src="assets/img/Profile-3f993ffc.svg" class="sizemenu">
+    <!--لگو سایت-->
+    <div class="flex flex-row lg:w-[10vw] w-auto ml-[2vw] space-x-3 ">
+        <a href="indexLogin.html"><img src="assets/img/Profile-3f993ffc.svg" class="sizemenu login">
+            <img src="assets/img/image-anj6.webp" class="sizemenu hidden login object-cover object-center"></a>
         <img src="assets/img/cart-dark-4b9bbf20.svg" class="sizemenu">
     </div>
 </header>
+<!--نویگیشین منوی موبایلی -->
+<div class="lg:hidden  top-[12vh] z-40 left-0 w-full hidden h-full bg-gray-100 mobileMenu fixed">
+    <div class="text-center">
+        <h2 class="uppercase font-extrabold text-[20vw] h-[10vh]  text-semiDarkPer GroteskCompressedBold hover:text-[22vw] animFont">
+            shop</h2>
+        <section
+                class=" w-full h-auto px-[16vw] space-y-4 mt-[3vh] box-border space-x-4 justify-center flex flex-row flex-wrap pt-[3vh]">
+            <button class="botStyle GroteskBold">all</button>
+            <button class="botStyle GroteskBold">PRETZEL THINS</button>
+            <button class="botStyle GroteskBold">OLIVES</button>
+            <button class="botStyle GroteskBold">BUNDLES</button>
+            <button class="botStyle GroteskBold">CHOCO PRETZELS</button>
+            <button class="botStyle GroteskBold">MERCH</button>
+        </section>
+        <h2 class="uppercase font-bold text-[20vw] h-[10vh] text-semiDarkPer GroteskCompressedBold hover:text-[22vw] animFont pt-[3vh]">
+            Our Story</h2>
+        <h2 class="uppercase font-bold text-[20vw]  h-[10vh] text-semiDarkPer GroteskCompressedBold hover:text-[22vw] animFont pt-[3vh]">
+            Find Olly's</h2>
+        <h2 class="uppercase font-extrabold text-[20vw]  h-[10vh] text-semiDarkPer GroteskCompressedBold hover:text-[22vw] animFont pt-[3vh]">
+            LOGIN</h2>
+    </div>
+
+    <div>
+
+    </div>
+</div>
+<!--پایان هدر سایت-->
+
 <main class="pt-[20vh] w-full">
     <h1 class="text-center text-semiDarkPer font-extrabold lg:text-8xl text-title-super GroteskCompressedBold">SHOP SNACKS</h1>
     <div class="text-center stick lg:static">
@@ -79,8 +126,8 @@
             <img src="assets/img/Olives_-_Garlic_Basil_-Pack.jpg">
         </section>
         <section class="w-full lg:w-[50%] lg:px-8">
-            <h1 class="mt-[3vh] text-5xl font-extrabold text-title-big text-semiDarkPer">OLIVES</h1>
-            <p class="mt-[3vh] text-lg font-semibold text-title-semi text-semiDarkPer">Glorious Greek olives dressed to impress in
+            <h1 class="mt-[3vh] lg:text-5xl font-extrabold text-title-big text-semiDarkPer">OLIVES</h1>
+            <p class="mt-[3vh] lg:text-lg font-semibold text-title-semi text-semiDarkPer">Glorious Greek olives dressed to impress in
                 mouthwatering marinades. Our snazzy snack pouches contain no stones, no messy oils and no artificials.
                 O’live the dream!</p>
         </section>
@@ -138,7 +185,7 @@
         <p>Terms of Service</p></section>
 </footer>
 
-
+<script type="module" src="assets/js/main-js.js"></script>
 <script type="module" src="assets/js/shopmenu.js"></script>
 <script type="module" src="assets/js/main-func.js"></script>
 </body>

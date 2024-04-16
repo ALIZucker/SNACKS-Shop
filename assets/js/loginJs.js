@@ -2,19 +2,26 @@ import {showInput, showAlart, LowColor, scrollEvent, reviwcite} from "./main-fun
 
 const boxsmsinput = document.querySelector('.box-smsinput');
 const inputmobile = document.querySelector('.inputmobile');
+const timersms = document.querySelector('.timersms');
 const smsbot = document.querySelector('.smsbot');
 const linkcreate = document.querySelectorAll('.linkcreate');
 const sectionlogin = document.querySelectorAll('.section-login');
 
 let allow = false;
 let login = true;
-
+let count=59;
 //---------------------------func
 function numberphHandler() {
     if (inputmobile.value.length > 0) {
         inputmobile.style.display = "none";
         boxsmsinput.style.display = "block";
         smsbot.innerHTML = "Login"
+        timersms.style.display='block'
+       const setin=setInterval(function () {
+            timersms.innerHTML="00:"+count;
+            count-=1;
+            if (count===0){clearInterval(setin)}
+        },1000)
         console.log(smsbot)
     } else {
         alert("شماره وارد شود")
@@ -46,3 +53,4 @@ function CreateHandler() {
 smsbot.addEventListener('click', numberphHandler);
 linkcreate[0].addEventListener('click', CreateHandler);
 linkcreate[1].addEventListener('click', CreateHandler);
+

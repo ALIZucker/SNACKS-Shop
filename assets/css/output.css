@@ -924,16 +924,8 @@ video {
   z-index: 40;
 }
 
-.ml-\[15vw\] {
-  margin-left: 15vw;
-}
-
 .ml-\[2vw\] {
   margin-left: 2vw;
-}
-
-.ml-\[32vw\] {
-  margin-left: 32vw;
 }
 
 .ml-\[3vh\] {
@@ -1026,10 +1018,6 @@ video {
 
 .h-\[12vh\] {
   height: 12vh;
-}
-
-.h-\[130vh\] {
-  height: 130vh;
 }
 
 .h-\[14vh\] {
@@ -1158,10 +1146,6 @@ video {
 
 .w-\[80\%\] {
   width: 80%;
-}
-
-.w-\[8vw\] {
-  width: 8vw;
 }
 
 .w-\[90\%\] {
@@ -1511,11 +1495,6 @@ video {
   font-size: 20vw;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .text-title-big {
   font-size: 8vw;
 }
@@ -1534,11 +1513,6 @@ video {
 
 .text-title-super {
   font-size: 10vw;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -1627,13 +1601,14 @@ video {
 }
 
 #search {
-  width: 15vw;
+  width: 5vw;
   margin-top: 0.4vh;
   border: none;
   background-color: #F3F4F6;
   outline: none;
   direction: rtl;
   padding: 2px 2px;
+  transition: width 0.5s ease-in-out;
   font-size: 1.2vw;
 }
 
@@ -1739,7 +1714,17 @@ video {
   transition: all 0.2s linear;
 }
 
+.timersms {
+  display: none;
+  font-size: 3vw;
+  font-weight: 600;
+}
+
 @media (min-width: 1024px) {
+  .timersms {
+    font-size: 1.2vw;
+  }
+
   .lg\:botn {
     height: 8vh;
     width: 14vw;
@@ -1787,15 +1772,11 @@ video {
   opacity: 1;
 }
 
-.hover\:shodow:hover{
+.hover\:shodow:hover {
   box-shadow: 1px 2px 7px 4px #999999;
 }
 
 @media (min-width: 640px) {
-  .sm\:mt-4 {
-    margin-top: 1rem;
-  }
-
   .sm\:mt-\[4vh\] {
     margin-top: 4vh;
   }
@@ -1841,14 +1822,6 @@ video {
 
   .lg\:ml-4 {
     margin-left: 1rem;
-  }
-
-  .lg\:ml-\[18vw\] {
-    margin-left: 18vw;
-  }
-
-  .lg\:ml-\[28vw\] {
-    margin-left: 28vw;
   }
 
   .lg\:ml-\[2vw\] {
@@ -1933,10 +1906,6 @@ video {
 
   .lg\:h-\[14vh\] {
     height: 14vh;
-  }
-
-  .lg\:h-\[16vh\] {
-    height: 16vh;
   }
 
   .lg\:h-\[40vh\] {
@@ -2033,10 +2002,6 @@ video {
 
   .lg\:w-\[90\%\] {
     width: 90%;
-  }
-
-  .lg\:w-\[9vw\] {
-    width: 9vw;
   }
 
   .lg\:w-full {
@@ -2141,6 +2106,11 @@ video {
     line-height: 2.5rem;
   }
 
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .lg\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
@@ -2198,11 +2168,6 @@ video {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
   }
 
   .lg\:font-bold {

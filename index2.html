@@ -9,7 +9,6 @@
     <link type="text/css" rel="icon" href="assets/img/great-taste-badge_no-date_450x.svg">
 </head>
 <body>
-
 <header class="flex flex-ca w-full h-[12vh] items-center justify-between fixed z-40 bg-gray-100">
     <div class="ml-[3vw] lg:ml-4  lg:w-[37vw] w-[20vw] text-center">
         <section class="lg:hidden  selectnav">
@@ -23,9 +22,9 @@
             <li><a href="shop.html">Shop</a></li>
             <li><a href="#0" onclick="alert('صفحه ارتباط با ما')">Our Story</a></li>
             <li>
-                <div class="flex flex-row items-center space-x-1 border-2 border-gray-500 p-[2px] rounded-xl">
-                    <input type="search" id="search"/>
-                    <div class="absolute flex flex-col bg-gray-200 top-[9vh] lg:w-[17vw] text  shadow-2xl shadow-neutral-500 bod">
+                <div class="flex flex-row items-center space-x-1 border-2 border-gray-500 p-[2px] ">
+                    <input type="search" id="search" onfocus="this.style.width='15vw'"/>
+                    <div class="absolute flex flex-col bg-gray-200 top-[9vh] lg:w-[17vw] text  shadow-2xl shadow-neutral-500 hidden bod">
 
 
                     </div>
@@ -50,6 +49,33 @@
     </div>
 </header>
 <!--نویگیشین منوی موبایلی -->
+<div class="lg:hidden  top-[12vh] z-40 left-0 w-full hidden h-full bg-gray-100 mobileMenu fixed">
+    <div class="text-center">
+        <h2 class="uppercase font-extrabold text-[20vw] h-[10vh]  text-semiDarkPer GroteskCompressedBold hover:text-[22vw] animFont">
+            shop</h2>
+        <section
+                class=" w-full h-auto px-[16vw] space-y-4 mt-[3vh] box-border space-x-4 justify-center flex flex-row flex-wrap pt-[3vh]">
+            <button class="botStyle GroteskBold">all</button>
+            <button class="botStyle GroteskBold">PRETZEL THINS</button>
+            <button class="botStyle GroteskBold">OLIVES</button>
+            <button class="botStyle GroteskBold">BUNDLES</button>
+            <button class="botStyle GroteskBold">CHOCO PRETZELS</button>
+            <button class="botStyle GroteskBold">MERCH</button>
+        </section>
+        <h2 class="uppercase font-bold text-[20vw] h-[10vh] text-semiDarkPer GroteskCompressedBold hover:text-[22vw] animFont pt-[3vh]">
+            Our Story</h2>
+        <h2 class="uppercase font-bold text-[20vw]  h-[10vh] text-semiDarkPer GroteskCompressedBold hover:text-[22vw] animFont pt-[3vh]">
+            Find Olly's</h2>
+        <h2 class="uppercase font-extrabold text-[20vw]  h-[10vh] text-semiDarkPer GroteskCompressedBold hover:text-[22vw] animFont pt-[3vh]">
+            LOGIN</h2>
+    </div>
+
+    <div>
+
+    </div>
+</div>
+<!--پایان هدر سایت-->
+
 <div class="lg:hidden  top-[12vh] z-40 left-0 w-full hidden h-full bg-gray-100 mobileMenu fixed">
     <div class="text-center">
         <h2 class="uppercase font-extrabold text-[20vw] h-[10vh]  text-semiDarkPer GroteskCompressedBold hover:text-[22vw] animFont">
@@ -435,6 +461,7 @@
         <p>Refund Policy</p>
         <p>Terms of Service</p></section>
 </footer>
+<script type="module" src="assets/js/main-js.js"></script>
 <script type="module" src="assets/js/shopJs.js"></script>
 <script type="module" src="assets/js/main-func.js"></script>
 </body>
