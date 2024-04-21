@@ -6,22 +6,39 @@ const timersms = document.querySelector('.timersms');
 const smsbot = document.querySelector('.smsbot');
 const linkcreate = document.querySelectorAll('.linkcreate');
 const sectionlogin = document.querySelectorAll('.section-login');
+const smsinput = document.querySelectorAll('.smsinput');
+
 
 let allow = false;
 let login = true;
-let count=59;
+let count = 59;
+let smsCount = 1;
+
 //---------------------------func
+
+function mouseHandler() {
+    console.log(smsCount)
+    smsinput[smsCount].focus()
+    if (smsCount === 3) {
+        smsCount = 0;
+    } else {
+        smsCount += 1;
+    }
+}
+
 function numberphHandler() {
     if (inputmobile.value.length > 0) {
         inputmobile.style.display = "none";
         boxsmsinput.style.display = "block";
         smsbot.innerHTML = "Login"
-        timersms.style.display='block'
-       const setin=setInterval(function () {
-            timersms.innerHTML="00:"+count;
-            count-=1;
-            if (count===0){clearInterval(setin)}
-        },1000)
+        timersms.style.display = 'block'
+        const setin = setInterval(function () {
+            timersms.innerHTML = "00:" + count;
+            count -= 1;
+            if (count === 0) {
+                clearInterval(setin)
+            }
+        }, 1000)
         console.log(smsbot)
     } else {
         alert("شماره وارد شود")
@@ -54,3 +71,6 @@ smsbot.addEventListener('click', numberphHandler);
 linkcreate[0].addEventListener('click', CreateHandler);
 linkcreate[1].addEventListener('click', CreateHandler);
 
+smsinput.forEach((value) => {
+    value.addEventListener('keyup', mouseHandler)
+})
