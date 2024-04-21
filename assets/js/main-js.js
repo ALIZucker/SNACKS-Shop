@@ -4,6 +4,7 @@ import {showInput, showAlart, LowColor, scrollEvent, reviwcite} from "./main-fun
 const inputSearch = document.getElementById('search')
 const bannerText = document.getElementById('bannerText')
 const rezultBox = document.querySelector('.bod')
+
 const botbanner = document.querySelector('.botbanner')
 const titlesnack = document.querySelector('.titlesnack')
 const titlesnack2 = document.querySelector('.titlesnack2')
@@ -46,21 +47,41 @@ let closeicon = false;
 
 (function () {
 
-    if(window.location.search ==="?name=angelina"){
-        console.log(window.location.search )
+    if (window.location.search === "?name=angelina") {
+
         login[0].classList.add('hidden');
 
         login[1].classList.remove('hidden')
     }
+})();
+
+
+(function () {
+    const preload = document.getElementById('preload')
+    const body = document.getElementById('b')
+    console.log(body)
+    const promis = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            body.style.overflow = 'scroll';
+            preload.style.opacity = '0';
+
+        }, 3000);
+        setTimeout(() => {
+            preload.style.display = 'none';
+        }, 5000);
+        resolve();
+        reject();
+    })
+    promis.then((suc)=>{console.log(suc)})
+        .catch((err)=>{console.log(err)})
+
 })()
-
-
 
 function inputHandler() {
     let rez = dic.filter((value) => {
         return value.toLowerCase().includes(inputSearch.value)
     })
-    rezultBox.style.display='block';
+    rezultBox.style.display = 'block';
     showInput(rez, rezultBox, inputSearch)
 }
 
