@@ -1,535 +1,918 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>SNACKS SOOO GOOD</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link type="text/css" rel="stylesheet" href="assets/css/output.css">
-    <link type="text/css" rel="stylesheet" href="assets/fonts/stylesheet.css">
-    <link type="text/css" rel="icon" href="assets/img/great-taste-badge_no-date_450x.svg">
-</head>
-<body style="overflow: hidden;" id="b">
+    <link type="text/css" rel="stylesheet" href="assets/css/output.css" />
+    <link type="text/css" rel="stylesheet" href="assets/fonts/stylesheet.css" />
+    <link
+      type="text/css"
+      rel="icon"
+      href="assets/img/great-taste-badge_no-date_450x.svg"
+    />
+  </head>
+  <body style="overflow: hidden" id="b">
+    <div id="preload">
+      <img
+        src="assets/img/giphy.gif"
+        class="lg:w-[28vw] lg:h-[35vh] lg:object-fill"
+      />
+    </div>
+    <!--بخش داشبرد محصولات-->
+    <section class="sell-bascket anim">
+      <the-element imgSrc="assets/img/o1.webp" titleElm="snack"></the-element>
+      <the-element
+        imgSrc="assets/img/o2.webp"
+        titleElm="snack felfl"
+      ></the-element>
+      <the-element
+        imgSrc="assets/img/o3.webp"
+        titleElm="snack shor"
+      ></the-element>
+      <the-element
+        imgSrc="assets/img/o4.webp"
+        titleElm="snack serke"
+      ></the-element>
+    </section>
 
-<div id="preload">
-    <img src="assets/img/giphy.gif"  class="lg:w-[28vw] lg:h-[35vh] lg:object-fill">
-</div>
-
-<header class="flex flex-ca w-full h-[12vh] items-center justify-between fixed z-40 bg-gray-100">
-    <div class="ml-[3vw] lg:ml-4  lg:w-[37vw] w-[20vw] text-center">
-        <section class="lg:hidden  selectnav">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                 stroke="currentColor"
-                 class="sizemenu ">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
-            </svg>
+    <header
+      class="flex flex-ca w-full h-[12vh] items-center justify-between fixed z-40 bg-gray-100"
+    >
+      <div class="ml-[3vw] lg:ml-4 lg:w-[37vw] w-[20vw] text-center">
+        <section class="lg:hidden selectnav">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="sizemenu"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
         </section>
-        <ul class="hidden    lg:flex lg:flex-row space-x-6 text-semiDarkPer GroteskBold text-title-lit">
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="#0" onclick="alert('صفحه ارتباط با ما')">Our Story</a></li>
-            <li>
-                <div class="flex flex-row items-center space-x-1 border-2 border-gray-500 p-[2px] ">
-                    <input type="search" id="search" onfocus="this.style.width='15vw'"/>
-                    <div class="absolute flex flex-col bg-gray-200 top-[9vh] lg:w-[17vw] text  shadow-2xl shadow-neutral-500 hidden  bod">
-
-
-                    </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                         stroke="currentColor" class="w-7 h-7">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/>
-                    </svg>
-
-                </div>
-            </li>
+        <ul
+          class="hidden lg:flex lg:flex-row space-x-6 text-semiDarkPer GroteskBold text-title-lit"
+        >
+          <li><a href="shop.html">Shop</a></li>
+          <li>
+            <a href="#0" onclick="alert('صفحه ارتباط با ما')">Our Story</a>
+          </li>
+          <li>
+            <div
+              class="flex flex-row items-center space-x-1 border-2 border-gray-500 p-[2px]"
+            >
+              <input
+                type="search"
+                id="search"
+                onfocus="this.style.width='15vw'"
+              />
+              <div
+                class="absolute flex flex-col bg-gray-200 top-[9vh] lg:w-[17vw] text shadow-2xl shadow-neutral-500 hidden bod"
+              ></div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-7 h-7"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
+            </div>
+          </li>
         </ul>
-    </div>
-    <div class="w-[20vw]  h-[9vh] lg:mr-[17vw]  lg:w-[8vw] object-cover">
-        <img src="assets/img/footer-logo-354062a9.svg">
-    </div>
-    <!--لگو سایت-->
-    <div class="flex flex-row lg:w-[10vw] w-auto ml-[2vw] space-x-3 ">
-        <a href="indexLogin.html"><img src="assets/img/Profile-3f993ffc.svg" class="sizemenu login">
-            <img src="assets/img/image-anj6.webp" class="sizemenu hidden login object-cover object-center"></a>
-        <img src="assets/img/cart-dark-4b9bbf20.svg" class="sizemenu">
-    </div>
-</header>
-<!--نویگیشین منوی موبایلی -->
-<div class="lg:hidden  top-[12vh] z-40 left-0 w-full hidden h-full bg-gray-100 mobileMenu fixed">
-    <div class="text-center">
-        <h2 class="uppercase font-extrabold text-[20vw] h-[10vh]  text-semiDarkPer GroteskCompressedBold hover:text-[22vw] animFont">
-            shop</h2>
+      </div>
+      <div class="w-[20vw] h-[9vh] lg:mr-[17vw] lg:w-[8vw] object-cover">
+        <img src="assets/img/footer-logo-354062a9.svg" />
+      </div>
+      <!--لگو سایت-->
+      <div class="flex flex-row lg:w-[10vw] w-auto ml-[2vw] space-x-3">
+        <a href="indexLogin.html"
+          ><img src="assets/img/Profile-3f993ffc.svg" class="sizemenu login" />
+          <img
+            src="assets/img/image-anj6.webp"
+            class="sizemenu hidden login object-cover object-center"
+        /></a>
+        <img src="assets/img/cart-dark-4b9bbf20.svg" class="sizemenu bask" />
+      </div>
+    </header>
+    <!--نویگیشین منوی موبایلی -->
+    <div
+      class="lg:hidden top-[12vh] z-40 left-0 w-full hidden h-full bg-gray-100 mobileMenu fixed"
+    >
+      <div class="text-center">
+        <h2
+          class="uppercase font-extrabold text-[20vw] h-[10vh] text-semiDarkPer GroteskCompressedBold hover:text-[22vw] animFont"
+        >
+          shop
+        </h2>
         <section
-                class=" w-full h-auto px-[16vw] space-y-4 mt-[3vh] box-border space-x-4 justify-center flex flex-row flex-wrap pt-[3vh]">
-            <button class="botStyle GroteskBold">all</button>
-            <button class="botStyle GroteskBold">PRETZEL THINS</button>
-            <button class="botStyle GroteskBold">OLIVES</button>
-            <button class="botStyle GroteskBold">BUNDLES</button>
-            <button class="botStyle GroteskBold">CHOCO PRETZELS</button>
-            <button class="botStyle GroteskBold">MERCH</button>
+          class="w-full h-auto px-[16vw] space-y-4 mt-[3vh] box-border space-x-4 justify-center flex flex-row flex-wrap pt-[3vh]"
+        >
+          <button class="botStyle GroteskBold">all</button>
+          <button class="botStyle GroteskBold">PRETZEL THINS</button>
+          <button class="botStyle GroteskBold">OLIVES</button>
+          <button class="botStyle GroteskBold">BUNDLES</button>
+          <button class="botStyle GroteskBold">CHOCO PRETZELS</button>
+          <button class="botStyle GroteskBold">MERCH</button>
         </section>
-        <h2 class="uppercase font-bold text-[20vw] h-[10vh] text-semiDarkPer GroteskCompressedBold hover:text-[22vw] animFont pt-[3vh]">
-            Our Story</h2>
-        <h2 class="uppercase font-bold text-[20vw]  h-[10vh] text-semiDarkPer GroteskCompressedBold hover:text-[22vw] animFont pt-[3vh]">
-            Find Olly's</h2>
-        <h2 class="uppercase font-extrabold text-[20vw]  h-[10vh] text-semiDarkPer GroteskCompressedBold hover:text-[22vw] animFont pt-[3vh]">
-            LOGIN</h2>
+        <h2
+          class="uppercase font-bold text-[20vw] h-[10vh] text-semiDarkPer GroteskCompressedBold hover:text-[22vw] animFont pt-[3vh]"
+        >
+          Our Story
+        </h2>
+        <h2
+          class="uppercase font-bold text-[20vw] h-[10vh] text-semiDarkPer GroteskCompressedBold hover:text-[22vw] animFont pt-[3vh]"
+        >
+          Find Olly's
+        </h2>
+        <h2
+          class="uppercase font-extrabold text-[20vw] h-[10vh] text-semiDarkPer GroteskCompressedBold hover:text-[22vw] animFont pt-[3vh]"
+        >
+          LOGIN
+        </h2>
+      </div>
+
+      <div></div>
     </div>
+    <!--پایان هدر سایت-->
 
-    <div>
-
-    </div>
-</div>
-<!--پایان هدر سایت-->
-
-<main>
-    <div class="h-[120vh] lg:h-[95vh] bg-img lg:bg-imgLG relative ">
-
+    <main>
+      <div class="h-[120vh] lg:h-[95vh] bg-img lg:bg-imgLG relative">
         <p class="title-text pt-[20vh] Grotesk">5.86 Score 2100 Reviwes</p>
 
-        <h1 class="GroteskBold font-extrabold text-[10vw] text-white text-center lg:text-left lg:text-[6vw] lg:ml-4">
-            SNACKS<br> SOOO GOOD
+        <h1
+          class="GroteskBold font-extrabold text-[10vw] text-white text-center lg:text-left lg:text-[6vw] lg:ml-4"
+        >
+          SNACKS<br />
+          SOOO GOOD
         </h1>
-        <p class="title-text GroteskRegular">Healthier delicious snacks designed to feed your feel good!</p>
-        <button class="hidden botbanner GroteskBold lg:block lg:botn lg:border-cyan-50 lg:text-white lg:mt-[5vh] lg:ml-[3vw]  hover:rounded-[50%] hover:bg-white hover:text-lightPer">
-            SHOP NOW
+        <p class="title-text GroteskRegular">
+          Healthier delicious snacks designed to feed your feel good!
+        </p>
+        <button
+          class="hidden botbanner GroteskBold lg:block lg:botn lg:border-cyan-50 lg:text-white lg:mt-[5vh] lg:ml-[3vw] hover:rounded-[50%] hover:bg-white hover:text-lightPer"
+        >
+          SHOP NOW
         </button>
-    </div>
-    <!--عکس هدر-->
-    <div>
+      </div>
+      <!--عکس هدر-->
+      <div>
         <section
-                class="GroteskRegular mt-[9vh] w-full h-[15vh] text-center text-title-big1 lg:text-title-semi font-semibold text-lightPer">
-            <p id="bannerText"></p>
+          class="GroteskRegular mt-[9vh] w-full h-[15vh] text-center text-title-big1 lg:text-title-semi font-semibold text-lightPer"
+        >
+          <p id="bannerText"></p>
         </section>
-        <section class="flex flex-row flex-wrap justify-evenly w-full gap-x-1.5 gap-y-4">
-            <img src="assets/img/GQ_Logo_1-fdde2bb5.svg" class="brand-size">
-            <img src="assets/img/sheerluxe-cbd1235a.svg" class="brand-size">
-            <img src="assets/img/VOGUE_LOGO_1-9007c6b8.svg" class="brand-size">
-            <img src="assets/img/evening-3fff87f2.svg" class="brand-size">
-        </section>
-    </div>
-    <!--برند ها پایان-->
-    <div class="flex flex-col mt-[10vh] lg:flex-row lg:w-full lg:justify-around">
-        <article class="box-post">
-            <div class="geeks rounded-2xl">
-                <img src="assets/img/card1-fa74b6bc.webp">
-            </div>
-
-            <h3 class="Grotesk text-title-big1  lg:text-title-lit text-semiDarkPer font-bold ">PRETZEL THINS </h3>
-            <p class="GroteskRegular text-title-semi lg:text-text-norm text-semiDarkPer  font-bold">5 super
-                seasonings</p>
-        </article>
-        <article class="box-post">
-            <div class="geeks rounded-2xl">
-                <img src="assets/img/card2-53e42a8a.png">
-            </div>
-            <h3 class="Grotesk text-title-big1  lg:text-title-lit  text-semiDarkPer font-bold">OLIVES </h3>
-            <p class="GroteskRegular text-title-semi lg:text-text-norm text-semiDarkPer font-bold">3 magical
-                marinades</p>
-        </article>
-        <article class="box-post">
-            <div class="geeks rounded-2xl">
-                <img src="assets/img/card3-a03e00a3.png">
-            </div>
-            <h3 class="Grotesk text-title-big1  lg:text-title-lit  text-semiDarkPer font-bold">CHOCO PRETZELS</h3>
-            <p class="GroteskRegular text-title-semi lg:text-text-norm text-semiDarkPer font-bold">2 fantabulous
-                flavours</p>
-        </article>
-        <article class="box-post">
-            <div class="geeks rounded-2xl">
-                <img src="assets/img/card4-c985882c.png">
-            </div>
-            <h3 class="Grotesk text-title-big1  lg:text-title-lit  text-semiDarkPer font-bold">BUNDLES</h3>
-            <p class="GroteskRegular text-title-semi lg:text-text-norm text-semiDarkPer font-bold">Bundle up and
-                save!</p>
-        </article>
-    </div>
-    <!--پایان پست هااا-->
-    <div class=" bg-backpink relative lg:h-[93vh] h-[121vh]  ">
         <section
-                class="lg:hidden  absolute h-auto w-full GroteskBold text-center pt-[3vh] font-bold text-[12vw] ">
-            <div class="text-titlePer  ">SNACKS THAT FEED YOUR FEEL G
-                <img src="assets/img/Smile-4eab8134.svg" CLASS="face  ">
-                <img src="assets/img/Smile-4eab8134.svg" CLASS="face">
-                D
-            </div>
+          class="flex flex-row flex-wrap justify-evenly w-full gap-x-1.5 gap-y-4"
+        >
+          <img src="assets/img/GQ_Logo_1-fdde2bb5.svg" class="brand-size" />
+          <img src="assets/img/sheerluxe-cbd1235a.svg" class="brand-size" />
+          <img src="assets/img/VOGUE_LOGO_1-9007c6b8.svg" class="brand-size" />
+          <img src="assets/img/evening-3fff87f2.svg" class="brand-size" />
         </section>
-        <div class="flex flex-col  lg:h-full lg:flex-row-reverse pt-[2vh] lg:pt-[0]">
-            <section class="h-[80vh]  lg:h-full w-full lg:w-[150vw]">
-                <img src="assets/img/snackGif-b17e7fba.webp" class="fit h-full lg:object-fill	">
-            </section>
-            <section class="mt-[25vh] text-center lg:text-left titlesnack opacity-0">
-                <section
-                        class="hidden lg:block GroteskBold h-[25vh]  w-full  text-center p-[4vh] font-extrabold text-6xl">
-                    <div class="text-titlePer">SNACKS THAT FEED YOUR FEEL<br> G
-                        <img src="assets/img/Smile-4eab8134.svg" class="face lg:w-[7vw] lg:h-[10vh] object-fill">
-                        <img src="assets/img/Smile-4eab8134.svg" class="face lg:w-[7vw] lg:h-[10vh] object-fill">
-                        D
-                    </div>
-                </section>
-                <p class="text-center  lg:text-left lg:text-title-lit lg:mt-[20vh] text-titlePer text-title-big1 font-medium GroteskRegular px-5 ">
-                    Our delicious
-                    snacks (& us) have our hearts set on bringing happiness to the planet. We keep health
-                    at the centre of all our creations, whilst also delivering an unbeatable flavour experience that
-                    will blow your snacking socks off!</p>
-                <button class="btn-snack  Grotesk font-bold">SHOP NOW</button>
+      </div>
+      <!--برند ها پایان-->
+      <div
+        class="flex flex-col mt-[10vh] lg:flex-row lg:w-full lg:justify-around"
+      >
+        <article class="box-post">
+          <div class="geeks rounded-2xl">
+            <img src="assets/img/card1-fa74b6bc.webp" />
+          </div>
 
-            </section>
-        </div>
-    </div>
-    <!-- توضیحات اسنک-->
-    <div class="bg-backmidel h-[150vh] lg:h-[90vh] w-full">
-        <section class="  h-[25vh]  w-full  text-center pt-[3vh] font-extrabold text-title-super lg:text-8xl">
+          <h3
+            class="Grotesk text-title-big1 lg:text-title-lit text-semiDarkPer font-bold"
+          >
+            PRETZEL THINS
+          </h3>
+          <p
+            class="GroteskRegular text-title-semi lg:text-text-norm text-semiDarkPer font-bold"
+          >
+            5 super seasonings
+          </p>
+        </article>
+        <article class="box-post">
+          <div class="geeks rounded-2xl">
+            <img src="assets/img/card2-53e42a8a.png" />
+          </div>
+          <h3
+            class="Grotesk text-title-big1 lg:text-title-lit text-semiDarkPer font-bold"
+          >
+            OLIVES
+          </h3>
+          <p
+            class="GroteskRegular text-title-semi lg:text-text-norm text-semiDarkPer font-bold"
+          >
+            3 magical marinades
+          </p>
+        </article>
+        <article class="box-post">
+          <div class="geeks rounded-2xl">
+            <img src="assets/img/card3-a03e00a3.png" />
+          </div>
+          <h3
+            class="Grotesk text-title-big1 lg:text-title-lit text-semiDarkPer font-bold"
+          >
+            CHOCO PRETZELS
+          </h3>
+          <p
+            class="GroteskRegular text-title-semi lg:text-text-norm text-semiDarkPer font-bold"
+          >
+            2 fantabulous flavours
+          </p>
+        </article>
+        <article class="box-post">
+          <div class="geeks rounded-2xl">
+            <img src="assets/img/card4-c985882c.png" />
+          </div>
+          <h3
+            class="Grotesk text-title-big1 lg:text-title-lit text-semiDarkPer font-bold"
+          >
+            BUNDLES
+          </h3>
+          <p
+            class="GroteskRegular text-title-semi lg:text-text-norm text-semiDarkPer font-bold"
+          >
+            Bundle up and save!
+          </p>
+        </article>
+      </div>
+      <!--پایان پست هااا-->
+      <div class="bg-backpink relative lg:h-[93vh] h-[121vh]">
+        <section
+          class="lg:hidden absolute h-auto w-full GroteskBold text-center pt-[3vh] font-bold text-[12vw]"
+        >
+          <div class="text-titlePer">
+            SNACKS THAT FEED YOUR FEEL G
+            <img src="assets/img/Smile-4eab8134.svg" class="face" />
+            <img src="assets/img/Smile-4eab8134.svg" class="face" />
+            D
+          </div>
+        </section>
+        <div
+          class="flex flex-col lg:h-full lg:flex-row-reverse pt-[2vh] lg:pt-[0]"
+        >
+          <section class="h-[80vh] lg:h-full w-full lg:w-[150vw]">
+            <img
+              src="assets/img/snackGif-b17e7fba.webp"
+              class="fit h-full lg:object-fill"
+            />
+          </section>
+          <section
+            class="mt-[25vh] text-center lg:text-left titlesnack opacity-0"
+          >
             <section
-                    class="lg:opacity-0  lg:mt-[30vh] titlesnack2 h-[25vh]  w-full  text-center pt-[3vh] font-extrabold text-title-super lg:text-8xl">
-                <h2 class="text-titlePer GroteskBold ">HOW OLLY’S <BR>SNACKS UP</h2>
+              class="hidden lg:block GroteskBold h-[25vh] w-full text-center p-[4vh] font-extrabold text-6xl"
+            >
+              <div class="text-titlePer">
+                SNACKS THAT FEED YOUR FEEL<br />
+                G
+                <img
+                  src="assets/img/Smile-4eab8134.svg"
+                  class="face lg:w-[7vw] lg:h-[10vh] object-fill"
+                />
+                <img
+                  src="assets/img/Smile-4eab8134.svg"
+                  class="face lg:w-[7vw] lg:h-[10vh] object-fill"
+                />
+                D
+              </div>
             </section>
-        </section>
-        <section class="flex flex-col pt-[1vh] lg:flex-row-reverse lg:pt-[13vh]">
-            <article class="flex flex-col items-center text-center px-5 lg:w-[34vw]">
-                <img src="assets/img/face-4be56343.svg" class="w-[30vw] h-[30vh] hover:rotate-180">
-                <h3 class="lg:text-2xl text-title-big1  text-titlePer font-bold Grotesk">HEALTHIER DELICIOUS</h3>
-                <p class="lg:text-sm text-title-semi text-titlePer font-semibold GroteskRegular">All our creations have
-                    health at the heart
-                    and we have a
-                    no compromise mentality on the quality of
-                    our snack taste experience. We only deal in DELICIOUS.</p>
-            </article>
-
-
-            <article class="flex flex-col items-center text-center px-5 lg:w-[34vw] ">
-                <img src="assets/img/hand-a3ed2229.svg" class="w-[30vw] h-[30vh] hover:rotate-180">
-                <h3 class="lg:text-2xl text-title-big1  text-titlePer font-bold Grotesk">PLANT POWERED</h3>
-                <p class="lg:text-sm text-title-semi text-titlePer font-semibold GroteskRegular">All of our savoury
-                    Pretzel Thins & Olives
-                    are vegan
-                    friendly, plant powered by some of Mumma nature's finest natural ingredients.</p>
-            </article>
-
-
-            <article class="flex flex-col items-center text-center px-5 lg:w-[34vw] ">
-                <img src="assets/img/heart-28bf7461.svg" class="w-[30vw] h-[30vh] hover:rotate-180">
-                <h3 class="lg:text-2xl text-title-big1  text-titlePer font-bold Grotesk">CHARITY FOCUSSED</h3>
-                <p class="lg:text-sm text-title-semi text-titlePer font-semibold GroteskRegular">We donate a school
-                    meal, on your behalf,
-                    to a child in
-                    need with every order placed on our website - with the help of our friends, One Feeds Two.</p>
-            </article>
-        </section>
-
-    </div>
-    <!-- چرا اسنک-->
-    <div>
-        <section class="text-center mt-[4vh] relative">
-            <h2 class="bg-lowPre inline text-title-super lg:text-7xl font-bold text-white p-2 GroteskBold TRY-SOME">TRY
-                SOME</h2>
-            <h2 class="bg-lowPre inline text-title-big lg:text-6xl font-bold text-white p-2 absolute GroteskBold left-[22vw] lg:left-[29vw] top-[7vh] lg:top-[10.5vh] rotate-12 BESTSELLERS">
-                BESTSELLERS</h2>
-        </section>
-        <section class="mt-[14vh] lg:mt-[20vh]  flex flex-col lg:flex-row-reverse lg:w-full lg:justify-around">
-            <article class="box-post">
-                <div class="geeks rounded-2xl">
-                    <img src="assets/img/moveLine1-ce314c73.png">
-                </div>
-
-                <h3 class="lg:text-lg text-title-big1 p-[2vh] lg:p-[0]  GroteskWideMediumRegular h-[15vh] text-semiDarkPer font-bold  ">
-                    SOUR CREAM & ONION
-                    PRETZEL THINS </h3>
-                <button class="btn-snack  Grotesk font-bold" onclick="window.open('index2.html','_self')">SHOP NOW</button>
-                <ul class="flex flex-row justify-center mt-[2vh]">
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                             class="starRate">
-                            <path fill-rule="evenodd"
-                                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd"/>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                             class="starRate">
-                            <path fill-rule="evenodd"
-                                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd"/>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                             stroke="currentColor" class="starRate">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                  d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                             stroke="currentColor" class="starRate">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                  d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/>
-                        </svg>
-
-                    </li>
-                    <li><span
-                            class="ml-[3vh] bg-gray-200 text-title-big1 lg:text-text-norm  Grotesk font-bold">2.7</span>
-                    </li>
-                </ul>
-            </article>
-            <article class="box-post">
-                <div class="geeks rounded-2xl">
-                    <img src="assets/img/moveLine2-58dadf29.png">
-                </div>
-
-                <h3 class="lg:text-lg text-title-big1 p-[2vh] lg:p-[0]  GroteskWideMediumRegular h-[15vh] text-semiDarkPer font-bold  ">
-                    SOUR CREAM
-                </h3>
-                <button class="btn-snack  Grotesk font-bold" onclick="window.open('index2.html','_self')">SHOP NOW</button>
-                <ul class="flex flex-row justify-center mt-[2vh]">
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                             class="starRate">
-                            <path fill-rule="evenodd"
-                                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd"/>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                             class="starRate">
-                            <path fill-rule="evenodd"
-                                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd"/>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                             class="starRate">
-                            <path fill-rule="evenodd"
-                                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd"/>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                             stroke="currentColor" class="starRate">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                  d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/>
-                        </svg>
-
-                    </li>
-                    <li><span
-                            class="ml-[3vh] bg-gray-200 text-title-big1 lg:text-text-norm Grotesk font-bold">3.7</span>
-                    </li>
-                </ul>
-            </article>
-            <article class="box-post">
-                <div class="geeks rounded-2xl">
-                    <img src="assets/img/moveLine3-bff395c5.png">
-                </div>
-
-                <h3 class="lg:text-lg text-title-big1 p-[2vh] lg:p-[0]  GroteskWideMediumRegular h-[15vh] text-semiDarkPer font-bold  ">
-                    PRETZEL THINS </h3>
-                <button class="btn-snack  Grotesk font-bold" onclick="window.open('index2.html','_self')">SHOP NOW</button>
-                <ul class="flex flex-row justify-center mt-[2vh]">
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                             class="starRate">
-                            <path fill-rule="evenodd"
-                                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd"/>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                             class="starRate">
-                            <path fill-rule="evenodd"
-                                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd"/>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                             stroke="currentColor" class="starRate">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                  d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                             stroke="currentColor" class="starRate">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                  d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/>
-                        </svg>
-
-                    </li>
-                    <li><span
-                            class="ml-[3vh] bg-gray-200 text-title-big1 lg:text-text-norm Grotesk font-bold">2.7</span>
-                    </li>
-                </ul>
-            </article>
-            <article class="box-post">
-                <div class="geeks rounded-2xl">
-                    <img src="assets/img/moveLine4-e1d31b0b.png">
-                </div>
-
-                <h3 class="lg:text-lg text-title-big1 p-[2vh] lg:p-[0]  GroteskWideMediumRegular h-[15vh] text-semiDarkPer font-bold  ">
-                    ONION
-                </h3>
-                <button class="btn-snack  Grotesk font-bold" onclick="window.open('index2.html','_self')">SHOP NOW</button>
-                <ul class="flex flex-row justify-center mt-[2vh]">
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                             class="starRate">
-                            <path fill-rule="evenodd"
-                                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd"/>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                             class="starRate">
-                            <path fill-rule="evenodd"
-                                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd"/>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                             stroke="currentColor" class="starRate">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                  d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                             stroke="currentColor" class="starRate">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                  d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/>
-                        </svg>
-
-                    </li>
-                    <li><span
-                            class="ml-[3vh] bg-gray-200 text-title-big1 lg:text-text-norm Grotesk font-bold">2.7</span>
-                    </li>
-                </ul>
-            </article>
-
-        </section>
-
-    </div>
-    <!--پست های خرید-->
-    <div class="hidden  w-full h-[49vh] bg-sky-200 lg:flex lg:flex-row-reverse">
-        <section class="bg-img2 h-full w-[50%]">
-            <img src="assets/img/pretzel-d39f556a.webp" class="w-[50vw] h-[50vh]">
-        </section>
-        <section class="  h-[25vh]  w-full   pt-[3vh] font-extrabold text-5xl lg:text-4xl text-justify">
-            <h2 class="text-titlePer pl-3 mt-[9vh] GroteskBold font-extrabold">WITH EVERY ORDER PLACED,<br> WE DONATE A
-                SCHOOL MEAL <br>TO A CHILD
-                IN NEED</h2>
-        </section>
-    </div>
-    <!--بنر کلی-->
-    <div class="h-[87.5vh] lg:h-[98vh] bg-backpink flex flex-row justify-between items-center ">
-        <section>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                 class="lg:w-11 lg:h-11 w-[9vw] h-[9vh] opacity-70 btn">
-                <path fill-rule="evenodd"
-                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z"
-                      clip-rule="evenodd"/>
-            </svg>
-        </section>
-        <section class="flex flex-col space-y-5  h-[90%] items-center  lg:flex-row lg:justify-around ">
-            <section class="lg:w-[50%] h-[90%] lg:relative ">
-                <img src="assets/img/p1-b680ccc9.webp"
-                     class="reviews lg:w-[30vw] w-[60vw] reviewstran">
-                <img src="assets/img/p2-70240153.webp"
-                     class="reviews reviewstran">
-                <img src="assets/img/p4-0288d4ea.webp"
-                     class="reviews reviewstran">
-                <img src="assets/img/p3-52940ff4.webp"
-                     class="reviews reviewstran">
-            </section>
-
-            <section class="lg:w-[40%] ">
-                <p class="text-title-big text-semiDarkPer font-extrabold text-center lg:text-7xl mt-[4vh] rewtext">
-                    "Pretzels
-                    reinvented! Crunch
-                    crunch yum!"</p>
-                <p class="lg:text-lg text-title-big1 text-semiDarkPer GroteskRegular font-bold text-center mt-[6vh] rewtextname">
-                    Selena - Verified
-                    Customer</p>
-            </section>
-        </section>
-        <section>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                 class="lg:w-11 lg:h-11 w-[9vw] h-[9vh]  opacity-70 btn">
-                <path fill-rule="evenodd"
-                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z"
-                      clip-rule="evenodd"/>
-            </svg>
-        </section>
-    </div>
-    <div class="flex flex-row justify-around h-[25vh] px-5 lg:px-8 space-x-4 lg:space-x-14 lg:mt-[5vh]">
-        <img src="assets/img/stockist-1-7748a7ba.svg" class="w-[15vw]">
-        <img src="assets/img/stockist-2-3fc2a33d.svg" class="w-[15vw]">
-        <img src="assets/img/stockist-3-b064d2ba.svg" class="w-[15vw]">
-        <img src="assets/img/stockist-4-f50aa5c1.svg" class="w-[15vw]">
-        <img src="assets/img/stockist-5-f7b36570.svg" class="w-[15vw]">
-    </div>
-    <!--برندینگ-->
-
-</main>
-<footer class="bg-semiDarkPer h-[110vh] lg:h-[95vh]">
-    <div class="flex flex-row flex-wrap lg:flex-nowrap  items-center px-5 py-[4vh]">
-        <img src="assets/img/footer-logo-354062a9.svg" class="w-[35vw] lg:w-[18vw]">
+            <p
+              class="text-center lg:text-left lg:text-title-lit lg:mt-[20vh] text-titlePer text-title-big1 font-medium GroteskRegular px-5"
+            >
+              Our delicious snacks (& us) have our hearts set on bringing
+              happiness to the planet. We keep health at the centre of all our
+              creations, whilst also delivering an unbeatable flavour experience
+              that will blow your snacking socks off!
+            </p>
+            <button class="btn-snack Grotesk font-bold">SHOP NOW</button>
+          </section>
+        </div>
+      </div>
+      <!-- توضیحات اسنک-->
+      <div class="bg-backmidel h-[150vh] lg:h-[90vh] w-full">
         <section
-                class="h-[25vh]  w-full text-white text-center mt-[4vh]  font-extrabold text-[15vw] lg:text-9xl">
-            FEEL G
-            <img src="assets/img/face-4be56343.svg" class="face lg:w-[7vw] lg:h-[14vh] object-cover">
-            <img src="assets/img/face-4be56343.svg" class="face lg:w-[7vw] lg:h-[14vh] object-cover">D
+          class="h-[25vh] w-full text-center pt-[3vh] font-extrabold text-title-super lg:text-8xl"
+        >
+          <section
+            class="lg:opacity-0 lg:mt-[30vh] titlesnack2 h-[25vh] w-full text-center pt-[3vh] font-extrabold text-title-super lg:text-8xl"
+          >
+            <h2 class="text-titlePer GroteskBold">
+              HOW OLLY’S <br />SNACKS UP
+            </h2>
+          </section>
         </section>
-    </div>
-    <hr class="px-[5vw]">
+        <section
+          class="flex flex-col pt-[1vh] lg:flex-row-reverse lg:pt-[13vh]"
+        >
+          <article
+            class="flex flex-col items-center text-center px-5 lg:w-[34vw]"
+          >
+            <img
+              src="assets/img/face-4be56343.svg"
+              class="w-[30vw] h-[30vh] hover:rotate-180"
+            />
+            <h3
+              class="lg:text-2xl text-title-big1 text-titlePer font-bold Grotesk"
+            >
+              HEALTHIER DELICIOUS
+            </h3>
+            <p
+              class="lg:text-sm text-title-semi text-titlePer font-semibold GroteskRegular"
+            >
+              All our creations have health at the heart and we have a no
+              compromise mentality on the quality of our snack taste experience.
+              We only deal in DELICIOUS.
+            </p>
+          </article>
 
-    <div class="flex flex-row flex-wrap lg:flex-nowrap ">
-        <section class="flex flex-row w-full justify-evenly mt-[4vh] text-white ">
-            <ul class="space-y-2 lg:text-lg text-title-semi font-semibold">
-                <li><b>SHOP</b></li>
-                <li  class="lg:text-text-norm">Shop All</li>
-                <li  class="lg:text-text-norm">Pretzel Thins</li>
-                <li  class="lg:text-text-norm">Olives</li>
-                <li  class="lg:text-text-norm">Shop All</li>
-            </ul>
-            <ul class="space-y-2 lg:text-lg text-title-semi font-semibold">
-                <li><b>COMPANY</b></li>
-                <li  class="lg:text-text-norm">Shop All</li>
-                <li  class="lg:text-text-norm">Pretzel Thins</li>
-                <li  class="lg:text-text-norm">One Feeds Two</li>
+          <article
+            class="flex flex-col items-center text-center px-5 lg:w-[34vw]"
+          >
+            <img
+              src="assets/img/hand-a3ed2229.svg"
+              class="w-[30vw] h-[30vh] hover:rotate-180"
+            />
+            <h3
+              class="lg:text-2xl text-title-big1 text-titlePer font-bold Grotesk"
+            >
+              PLANT POWERED
+            </h3>
+            <p
+              class="lg:text-sm text-title-semi text-titlePer font-semibold GroteskRegular"
+            >
+              All of our savoury Pretzel Thins & Olives are vegan friendly,
+              plant powered by some of Mumma nature's finest natural
+              ingredients.
+            </p>
+          </article>
 
+          <article
+            class="flex flex-col items-center text-center px-5 lg:w-[34vw]"
+          >
+            <img
+              src="assets/img/heart-28bf7461.svg"
+              class="w-[30vw] h-[30vh] hover:rotate-180"
+            />
+            <h3
+              class="lg:text-2xl text-title-big1 text-titlePer font-bold Grotesk"
+            >
+              CHARITY FOCUSSED
+            </h3>
+            <p
+              class="lg:text-sm text-title-semi text-titlePer font-semibold GroteskRegular"
+            >
+              We donate a school meal, on your behalf, to a child in need with
+              every order placed on our website - with the help of our friends,
+              One Feeds Two.
+            </p>
+          </article>
+        </section>
+      </div>
+      <!-- چرا اسنک-->
+      <div>
+        <section class="text-center mt-[4vh] relative">
+          <h2
+            class="bg-lowPre inline text-title-super lg:text-7xl font-bold text-white p-2 GroteskBold TRY-SOME"
+          >
+            TRY SOME
+          </h2>
+          <h2
+            class="bg-lowPre inline text-title-big lg:text-6xl font-bold text-white p-2 absolute GroteskBold left-[22vw] lg:left-[29vw] top-[7vh] lg:top-[10.5vh] rotate-12 BESTSELLERS"
+          >
+            BESTSELLERS
+          </h2>
+        </section>
+        <section
+          class="mt-[14vh] lg:mt-[20vh] flex flex-col lg:flex-row-reverse lg:w-full lg:justify-around"
+        >
+          <article class="box-post">
+            <div class="geeks rounded-2xl">
+              <img src="assets/img/moveLine1-ce314c73.png" />
+            </div>
+
+            <h3
+              class="lg:text-lg text-title-big1 p-[2vh] lg:p-[0] GroteskWideMediumRegular h-[15vh] text-semiDarkPer font-bold"
+            >
+              SOUR CREAM & ONION PRETZEL THINS
+            </h3>
+            <button
+              class="btn-snack Grotesk font-bold"
+              onclick="window.open('index2.html','_self')"
+            >
+              SHOP NOW
+            </button>
+            <ul class="flex flex-row justify-center mt-[2vh]">
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="starRate"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="starRate"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="starRate"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+                  />
+                </svg>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="starRate"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+                  />
+                </svg>
+              </li>
+              <li>
+                <span
+                  class="ml-[3vh] bg-gray-200 text-title-big1 lg:text-text-norm Grotesk font-bold"
+                  >2.7</span
+                >
+              </li>
             </ul>
-            <ul class="space-y-2 lg:text-lg text-title-semi font-semibold">
-                <li><b>CONTACT</b></li>
-                <li class="lg:text-text-norm">Our Story</li>
-                <li class="lg:text-text-norm">Questions?</li>
-                <li class="lg:text-text-norm">dev.mousavi</li>
+          </article>
+          <article class="box-post">
+            <div class="geeks rounded-2xl">
+              <img src="assets/img/moveLine2-58dadf29.png" />
+            </div>
+
+            <h3
+              class="lg:text-lg text-title-big1 p-[2vh] lg:p-[0] GroteskWideMediumRegular h-[15vh] text-semiDarkPer font-bold"
+            >
+              SOUR CREAM
+            </h3>
+            <button
+              class="btn-snack Grotesk font-bold"
+              onclick="window.open('index2.html','_self')"
+            >
+              SHOP NOW
+            </button>
+            <ul class="flex flex-row justify-center mt-[2vh]">
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="starRate"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="starRate"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="starRate"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="starRate"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+                  />
+                </svg>
+              </li>
+              <li>
+                <span
+                  class="ml-[3vh] bg-gray-200 text-title-big1 lg:text-text-norm Grotesk font-bold"
+                  >3.7</span
+                >
+              </li>
             </ul>
+          </article>
+          <article class="box-post">
+            <div class="geeks rounded-2xl">
+              <img src="assets/img/moveLine3-bff395c5.png" />
+            </div>
+
+            <h3
+              class="lg:text-lg text-title-big1 p-[2vh] lg:p-[0] GroteskWideMediumRegular h-[15vh] text-semiDarkPer font-bold"
+            >
+              PRETZEL THINS
+            </h3>
+            <button
+              class="btn-snack Grotesk font-bold"
+              onclick="window.open('index2.html','_self')"
+            >
+              SHOP NOW
+            </button>
+            <ul class="flex flex-row justify-center mt-[2vh]">
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="starRate"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="starRate"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="starRate"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+                  />
+                </svg>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="starRate"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+                  />
+                </svg>
+              </li>
+              <li>
+                <span
+                  class="ml-[3vh] bg-gray-200 text-title-big1 lg:text-text-norm Grotesk font-bold"
+                  >2.7</span
+                >
+              </li>
+            </ul>
+          </article>
+          <article class="box-post">
+            <div class="geeks rounded-2xl">
+              <img src="assets/img/moveLine4-e1d31b0b.png" />
+            </div>
+
+            <h3
+              class="lg:text-lg text-title-big1 p-[2vh] lg:p-[0] GroteskWideMediumRegular h-[15vh] text-semiDarkPer font-bold"
+            >
+              ONION
+            </h3>
+            <button
+              class="btn-snack Grotesk font-bold"
+              onclick="window.open('index2.html','_self')"
+            >
+              SHOP NOW
+            </button>
+            <ul class="flex flex-row justify-center mt-[2vh]">
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="starRate"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="starRate"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="starRate"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+                  />
+                </svg>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="starRate"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+                  />
+                </svg>
+              </li>
+              <li>
+                <span
+                  class="ml-[3vh] bg-gray-200 text-title-big1 lg:text-text-norm Grotesk font-bold"
+                  >2.7</span
+                >
+              </li>
+            </ul>
+          </article>
+        </section>
+      </div>
+      <!--پست های خرید-->
+      <div
+        class="hidden w-full h-[49vh] bg-sky-200 lg:flex lg:flex-row-reverse"
+      >
+        <section class="bg-img2 h-full w-[50%]">
+          <img
+            src="assets/img/pretzel-d39f556a.webp"
+            class="w-[50vw] h-[50vh]"
+          />
+        </section>
+        <section
+          class="h-[25vh] w-full pt-[3vh] font-extrabold text-5xl lg:text-4xl text-justify"
+        >
+          <h2 class="text-titlePer pl-3 mt-[9vh] GroteskBold font-extrabold">
+            WITH EVERY ORDER PLACED,<br />
+            WE DONATE A SCHOOL MEAL <br />TO A CHILD IN NEED
+          </h2>
+        </section>
+      </div>
+      <!--بنر کلی-->
+      <div
+        class="h-[87.5vh] lg:h-[98vh] bg-backpink flex flex-row justify-between items-center"
+      >
+        <section>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="lg:w-11 lg:h-11 w-[9vw] h-[9vh] opacity-70 btn"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </section>
+        <section
+          class="flex flex-col space-y-5 h-[90%] items-center lg:flex-row lg:justify-around"
+        >
+          <section class="lg:w-[50%] h-[90%] lg:relative">
+            <img
+              src="assets/img/p1-b680ccc9.webp"
+              class="reviews lg:w-[30vw] w-[60vw] reviewstran"
+            />
+            <img
+              src="assets/img/p2-70240153.webp"
+              class="reviews reviewstran"
+            />
+            <img
+              src="assets/img/p4-0288d4ea.webp"
+              class="reviews reviewstran"
+            />
+            <img
+              src="assets/img/p3-52940ff4.webp"
+              class="reviews reviewstran"
+            />
+          </section>
+
+          <section class="lg:w-[40%]">
+            <p
+              class="text-title-big text-semiDarkPer font-extrabold text-center lg:text-7xl mt-[4vh] rewtext"
+            >
+              "Pretzels reinvented! Crunch crunch yum!"
+            </p>
+            <p
+              class="lg:text-lg text-title-big1 text-semiDarkPer GroteskRegular font-bold text-center mt-[6vh] rewtextname"
+            >
+              Selena - Verified Customer
+            </p>
+          </section>
+        </section>
+        <section>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="lg:w-11 lg:h-11 w-[9vw] h-[9vh] opacity-70 btn"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </section>
+      </div>
+      <div
+        class="flex flex-row justify-around h-[25vh] px-5 lg:px-8 space-x-4 lg:space-x-14 lg:mt-[5vh]"
+      >
+        <img src="assets/img/stockist-1-7748a7ba.svg" class="w-[15vw]" />
+        <img src="assets/img/stockist-2-3fc2a33d.svg" class="w-[15vw]" />
+        <img src="assets/img/stockist-3-b064d2ba.svg" class="w-[15vw]" />
+        <img src="assets/img/stockist-4-f50aa5c1.svg" class="w-[15vw]" />
+        <img src="assets/img/stockist-5-f7b36570.svg" class="w-[15vw]" />
+      </div>
+      <!--برندینگ-->
+    </main>
+    <footer class="bg-semiDarkPer h-[110vh] lg:h-[95vh]">
+      <div
+        class="flex flex-row flex-wrap lg:flex-nowrap items-center px-5 py-[4vh]"
+      >
+        <img
+          src="assets/img/footer-logo-354062a9.svg"
+          class="w-[35vw] lg:w-[18vw]"
+        />
+        <section
+          class="h-[25vh] w-full text-white text-center mt-[4vh] font-extrabold text-[15vw] lg:text-9xl"
+        >
+          FEEL G
+          <img
+            src="assets/img/face-4be56343.svg"
+            class="face lg:w-[7vw] lg:h-[14vh] object-cover"
+          />
+          <img
+            src="assets/img/face-4be56343.svg"
+            class="face lg:w-[7vw] lg:h-[14vh] object-cover"
+          />D
+        </section>
+      </div>
+      <hr class="px-[5vw]" />
+
+      <div class="flex flex-row flex-wrap lg:flex-nowrap">
+        <section
+          class="flex flex-row w-full justify-evenly mt-[4vh] text-white"
+        >
+          <ul class="space-y-2 lg:text-lg text-title-semi font-semibold">
+            <li><b>SHOP</b></li>
+            <li class="lg:text-text-norm">Shop All</li>
+            <li class="lg:text-text-norm">Pretzel Thins</li>
+            <li class="lg:text-text-norm">Olives</li>
+            <li class="lg:text-text-norm">Shop All</li>
+          </ul>
+          <ul class="space-y-2 lg:text-lg text-title-semi font-semibold">
+            <li><b>COMPANY</b></li>
+            <li class="lg:text-text-norm">Shop All</li>
+            <li class="lg:text-text-norm">Pretzel Thins</li>
+            <li class="lg:text-text-norm">One Feeds Two</li>
+          </ul>
+          <ul class="space-y-2 lg:text-lg text-title-semi font-semibold">
+            <li><b>CONTACT</b></li>
+            <li class="lg:text-text-norm">Our Story</li>
+            <li class="lg:text-text-norm">Questions?</li>
+            <li class="lg:text-text-norm">dev.mousavi</li>
+          </ul>
         </section>
         <section class="w-full flex flex-col ml-[5vw] mt-[4vh]">
-            <label for="textme" class="text-white lg:text-lg text-title-semi Grotesk">Sign up</label>
-            <input type="text" id="textme"
-                   class="font-semibold w-[90%] box-border p-[2vh] lg:text-lg text-title-big1 text-titlePer ">
-            <button class="w-[90%]  p-[2vh] lg:text-lg text-title-big1 text-white border-cyan-50 border-2 mt-[4vh] GroteskBold rounded-2xl">
-                SHOP
-                NOW
-            </button>
+          <label
+            for="textme"
+            class="text-white lg:text-lg text-title-semi Grotesk"
+            >Sign up</label
+          >
+          <input
+            type="text"
+            id="textme"
+            class="font-semibold w-[90%] box-border p-[2vh] lg:text-lg text-title-big1 text-titlePer"
+          />
+          <button
+            class="w-[90%] p-[2vh] lg:text-lg text-title-big1 text-white border-cyan-50 border-2 mt-[4vh] GroteskBold rounded-2xl"
+          >
+            SHOP NOW
+          </button>
         </section>
-    </div>
-    <section
-            class="flex flex-wrap lg:text-text-norm text-title-lit space-x-6 lg:space-x-14 text-white justify-center items-center mt-[4vh] lg:mt-[16vh]">
+      </div>
+      <section
+        class="flex flex-wrap lg:text-text-norm text-title-lit space-x-6 lg:space-x-14 text-white justify-center items-center mt-[4vh] lg:mt-[16vh]"
+      >
         <p>Privacy Policy</p>
         <p>Refund Policy</p>
-        <p>Terms of Service</p></section>
-</footer>
+        <p>Terms of Service</p>
+      </section>
+    </footer>
 
-
-<script type="module" src="assets/js/main-js.js"></script>
-<script type="module" src="assets/js/main-func.js"></script>
-</body>
+    <script type="module" src="assets/js/main-js.js"></script>
+    <script type="module" src="assets/js/main-func.js"></script>
+  </body>
 </html>
